@@ -9,6 +9,11 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import CaseStudies from "./pages/CaseStudies";
 import AIMarketing from "./pages/services/AIMarketing";
+import SEOContentMarketing from "./pages/services/SEOContentMarketing";
+import PaidAds from "./pages/services/PaidAds";
+import LinkedInBranding from "./pages/services/LinkedInBranding";
+import SocialMediaManagement from "./pages/services/SocialMediaManagement";
+import WebsiteFunnelDevelopment from "./pages/services/WebsiteFunnelDevelopment";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +31,11 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/services/ai-marketing" element={<AIMarketing />} />
+          <Route path="/services/seo-content-marketing" element={<SEOContentMarketing />} />
+          <Route path="/services/paid-ads" element={<PaidAds />} />
+          <Route path="/services/linkedin-branding" element={<LinkedInBranding />} />
+          <Route path="/services/social-media-management" element={<SocialMediaManagement />} />
+          <Route path="/services/website-funnel-development" element={<WebsiteFunnelDevelopment />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
