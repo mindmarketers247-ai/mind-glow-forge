@@ -10,11 +10,13 @@ const Navigation = () => {
 
   const services = [
     { name: 'AI-Driven Marketing', path: '/services/ai-marketing' },
-    { name: 'SEO & Content', path: '/services/seo-content' },
+    { name: 'SEO', path: '/services/seo' },
+    { name: 'Content Marketing', path: '/services/content-marketing' },
     { name: 'Paid Ads', path: '/services/paid-ads' },
     { name: 'LinkedIn Branding', path: '/services/linkedin-branding' },
     { name: 'Social Media', path: '/services/social-media' },
-    { name: 'Website Development', path: '/services/web-development' },
+    { name: 'Website Development', path: '/services/website-development' },
+    { name: 'Funnel Development', path: '/services/funnel-development' },
   ];
 
   const isActiveRoute = (path: string) => location.pathname === path;
@@ -68,7 +70,7 @@ const Navigation = () => {
               </button>
 
               <div
-                className={`absolute top-full left-0 mt-2 w-64 glass rounded-xl border border-white/10 shadow-elegant transition-all duration-300 ${
+                className={`absolute top-full left-0 mt-2 w-64 bg-card/95 backdrop-filter backdrop-blur-xl rounded-xl border border-white/20 shadow-elegant transition-all duration-300 ${
                   servicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'
                 }`}
                 onMouseEnter={() => setServicesOpen(true)}
