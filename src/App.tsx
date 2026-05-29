@@ -40,7 +40,7 @@ const App = () => (
           <Route path="/services/content-marketing" element={<ContentMarketing />} />
           <Route path="/services/paid-ads" element={<PaidAds />} />
           <Route path="/services/linkedin-branding" element={<LinkedInBranding />} />
-          <Route path="/services/social-media-management" element={<SocialMediaManagement />} />
+          <Route path="/services/social-media" element={<SocialMediaManagement />} />
           <Route path="/services/website-funnel-development" element={<WebsiteFunnelDevelopment />} />
           <Route path="/services/website-development" element={<WebsiteDevelopment />} />
           <Route path="/services/funnel-development" element={<FunnelDevelopment />} />
