@@ -10,6 +10,7 @@ const Navigation = () => {
 
   const services = [
     { name: 'AI-Driven Marketing', path: '/services/ai-marketing' },
+    { name: 'AI Influencer Marketing', path: '/services/ai-influencer' },
     { name: 'SEO', path: '/services/seo' },
     { name: 'Content Marketing', path: '/services/content-marketing' },
     { name: 'Paid Ads', path: '/services/paid-ads' },
