@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import CaseStudies from "./pages/CaseStudies";
 import AIMarketing from "./pages/services/AIMarketing";
+import AIInfluencer from "./pages/services/AIInfluencer";
 import SEOContentMarketing from "./pages/services/SEOContentMarketing";
 import SEO from "./pages/services/SEO";
 import ContentMarketing from "./pages/services/ContentMarketing";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/services/ai-marketing" element={<AIMarketing />} />
+          <Route path="/services/ai-influencer" element={<AIInfluencer />} />
           <Route path="/services/seo-content-marketing" element={<SEOContentMarketing />} />
           <Route path="/services/seo" element={<SEO />} />
           <Route path="/services/content-marketing" element={<ContentMarketing />} />
