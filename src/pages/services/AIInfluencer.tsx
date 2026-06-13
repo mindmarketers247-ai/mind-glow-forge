@@ -17,6 +17,9 @@ import {
 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroImg from '@/assets/ai-influencer-hero.jpg';
+import ugcImg from '@/assets/ai-influencer-ugc.jpg';
+import processImg from '@/assets/ai-influencer-process.jpg';
 
 const influencers = [
   {
@@ -234,25 +237,19 @@ const AIInfluencer = () => {
             </div>
 
             <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                {influencers.slice(0, 4).map((inf, i) => (
-                  <div
-                    key={inf.name}
-                    className={`relative rounded-2xl overflow-hidden aspect-[3/4] bg-gradient-to-br ${inf.gradient} ${
-                      i % 2 === 1 ? 'translate-y-8' : ''
-                    } hover:scale-105 transition-transform duration-500`}
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                    <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full glass text-[10px] text-white">
-                      {inf.industry}
-                    </div>
-                    <div className="absolute bottom-3 left-3 right-3">
-                      <div className="text-sm font-bold text-white">{inf.name}</div>
-                      <div className="text-[10px] text-white/70">{inf.followers} followers</div>
-                    </div>
-                  </div>
-                ))}
+              <div className="relative rounded-3xl overflow-hidden glass card-glow">
+                <img
+                  src={heroImg}
+                  alt="Futuristic AI digital persona visualization"
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
               </div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 gradient-glow rounded-full animate-float opacity-60" />
+              <div className="absolute -bottom-4 -left-4 w-14 h-14 gradient-glow rounded-full animate-float opacity-60" style={{ animationDelay: '1s' }} />
             </div>
           </div>
         </div>
@@ -342,33 +339,17 @@ const AIInfluencer = () => {
               </ul>
             </div>
             <div className="relative h-[520px]">
-              {[0, 1, 2].map((i) => (
-                <div
-                  key={i}
-                  className="absolute w-48 h-[400px] rounded-[2.5rem] border-4 border-white/10 overflow-hidden glow-secondary"
-                  style={{
-                    left: `${i * 28}%`,
-                    top: `${i * 30}px`,
-                    background: `linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%)`,
-                    transform: `rotate(${(i - 1) * 6}deg)`,
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-14 h-14 rounded-full glass flex items-center justify-center">
-                      <Play className="w-6 h-6 text-white ml-1" fill="white" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 left-3 right-3 text-white">
-                    <div className="text-xs font-semibold">@aimodel_{i + 1}</div>
-                    <div className="text-[10px] opacity-80">{['Trying this new product', 'Honest review', 'Day in my life'][i]}</div>
-                    <div className="flex items-center gap-3 mt-2 text-[10px]">
-                      <span className="flex items-center gap-1"><Heart className="w-3 h-3" fill="white" /> 12.4K</span>
-                      <span className="flex items-center gap-1"><MessageCircle className="w-3 h-3" /> 892</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              <div className="relative w-full h-full rounded-3xl overflow-hidden glass card-glow">
+                <img
+                  src={ugcImg}
+                  alt="AI-generated UGC content visualization with floating smartphone screens"
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none" />
+              </div>
             </div>
           </div>
         </div>
@@ -382,6 +363,19 @@ const AIInfluencer = () => {
               How We Create Your <span className="text-gradient">AI Influencer</span>
             </h2>
           </div>
+
+          <div className="relative rounded-3xl overflow-hidden glass card-glow mb-12">
+            <img
+              src={processImg}
+              alt="AI influencer creation process visualization"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/80 pointer-events-none" />
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {steps.map((s) => (
               <div key={s.n} className="p-6 rounded-2xl glass card-glow relative">

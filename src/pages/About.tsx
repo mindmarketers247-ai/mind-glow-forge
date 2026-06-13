@@ -27,32 +27,6 @@ const About = () => {
     }
   ];
 
-  const team = [
-    {
-      name: 'Alex Chen',
-      role: 'CEO & AI Strategist',
-      bio: 'Former Google engineer turned marketing visionary. 10+ years building AI-powered growth engines.',
-      avatar: 'AC'
-    },
-    {
-      name: 'Sarah Rodriguez',
-      role: 'Head of Strategy',
-      bio: 'Ex-Facebook marketing lead with a track record of scaling startups to $100M+ valuations.',
-      avatar: 'SR'
-    },
-    {
-      name: 'Marcus Thompson',
-      role: 'Creative Director',
-      bio: 'Award-winning designer and brand architect who has worked with Fortune 500 companies.',
-      avatar: 'MT'
-    },
-    {
-      name: 'Dr. Priya Patel',
-      role: 'Data Scientist',
-      bio: 'PhD in Machine Learning from MIT. Transforms complex data into actionable marketing insights.',
-      avatar: 'PP'
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -106,7 +80,7 @@ const About = () => {
                 </p>
                 
                 <p>
-                  Today, we're proud to be the "Tesla of marketing agencies"—innovative, bold, 
+                  Today, we're proud to be innovative, bold, 
                   and always pushing the boundaries of what's possible in digital marketing.
                 </p>
               </div>
@@ -210,49 +184,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-24 relative">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gradient">Meet the Team</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The brilliant minds behind Mind Marketers, each bringing unique expertise to transform your marketing.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div 
-                key={index}
-                className="group card-glow p-8 rounded-2xl glass relative overflow-hidden text-center"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="absolute inset-0 gradient-primary opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
-                
-                <div className="relative z-10">
-                  <div className="w-20 h-20 gradient-glow rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white">
-                    {member.avatar}
-                  </div>
-                  
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-gradient transition-colors">
-                    {member.name}
-                  </h3>
-                  
-                  <div className="text-accent font-medium mb-4">{member.role}</div>
-                  
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 gradient-primary opacity-20"></div>
         <div className="absolute inset-0">
