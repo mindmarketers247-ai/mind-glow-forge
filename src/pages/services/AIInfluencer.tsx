@@ -17,6 +17,9 @@ import {
 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import heroImg from '@/assets/ai-influencer-hero.jpg';
+import ugcImg from '@/assets/ai-influencer-ugc.jpg';
+import processImg from '@/assets/ai-influencer-process.jpg';
 
 const influencers = [
   {
