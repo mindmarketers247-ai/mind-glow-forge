@@ -27,32 +27,6 @@ const About = () => {
     }
   ];
 
-  const team = [
-    {
-      name: 'Alex Chen',
-      role: 'CEO & AI Strategist',
-      bio: 'Former Google engineer turned marketing visionary. 10+ years building AI-powered growth engines.',
-      avatar: 'AC'
-    },
-    {
-      name: 'Sarah Rodriguez',
-      role: 'Head of Strategy',
-      bio: 'Ex-Facebook marketing lead with a track record of scaling startups to $100M+ valuations.',
-      avatar: 'SR'
-    },
-    {
-      name: 'Marcus Thompson',
-      role: 'Creative Director',
-      bio: 'Award-winning designer and brand architect who has worked with Fortune 500 companies.',
-      avatar: 'MT'
-    },
-    {
-      name: 'Dr. Priya Patel',
-      role: 'Data Scientist',
-      bio: 'PhD in Machine Learning from MIT. Transforms complex data into actionable marketing insights.',
-      avatar: 'PP'
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
