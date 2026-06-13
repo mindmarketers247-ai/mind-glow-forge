@@ -1,5 +1,7 @@
 import React from 'react';
 import { Brain, Target, Zap } from 'lucide-react';
+import aboutVisual from '@/assets/about-visual.jpg';
+
 
 const AboutSection = () => {
   return (
@@ -73,20 +75,28 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative p-8">
               {/* Main Card */}
-              <div className="glass card-glow p-8 rounded-3xl relative overflow-hidden">
-                <div className="absolute inset-0 gradient-primary opacity-10"></div>
-                
-                <div className="relative z-10 text-center space-y-6">
+              <div className="glass card-glow rounded-3xl relative overflow-hidden">
+                <img
+                  src={aboutVisual}
+                  alt="Glowing neural network sphere representing AI-powered marketing intelligence"
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                  className="w-full h-72 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none"></div>
+
+                <div className="relative z-10 p-8 text-center space-y-6 -mt-12">
                   <div className="w-20 h-20 gradient-glow rounded-2xl flex items-center justify-center mx-auto">
                     <Brain className="w-10 h-10 text-white" />
                   </div>
-                  
+
                   <div>
                     <h3 className="text-2xl font-bold mb-2">The Tesla of Marketing</h3>
                     <p className="text-muted-foreground mb-6">
                       Innovative, bold, and always ahead of the curve
                     </p>
-                    
+
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
                         <div className="text-2xl font-bold text-gradient">5+</div>

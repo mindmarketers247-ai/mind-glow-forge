@@ -1,13 +1,15 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import logo from '@/assets/mind-marketers-logo.png';
+import heroVisual from '@/assets/hero-visual.jpg';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-deep-gray"></div>
+        <img src={heroVisual} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-40" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/80 to-deep-gray/90"></div>
         
         {/* Floating Particles */}
         <div className="absolute inset-0">

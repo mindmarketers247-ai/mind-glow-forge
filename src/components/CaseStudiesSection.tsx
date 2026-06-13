@@ -1,5 +1,8 @@
 import React from 'react';
 import { ExternalLink, TrendingUp, Users, DollarSign, Award } from 'lucide-react';
+import fintechImg from '@/assets/case-fintech.jpg';
+import ecommerceImg from '@/assets/case-ecommerce.jpg';
+import b2bImg from '@/assets/case-b2b.jpg';
 
 const CaseStudiesSection = () => {
   const caseStudies = [
@@ -12,7 +15,7 @@ const CaseStudiesSection = () => {
         { metric: 'New Customers', value: '15K+', icon: Users },
         { metric: 'CAC Reduction', value: '65%', icon: DollarSign },
       ],
-      image: 'gradient-to-br from-blue-600 to-purple-600',
+      image: fintechImg,
     },
     {
       title: 'E-commerce Brand Scale',
@@ -23,7 +26,7 @@ const CaseStudiesSection = () => {
         { metric: 'Market Reach', value: '50+ Cities', icon: Users },
         { metric: 'ROAS', value: '8.5x', icon: DollarSign },
       ],
-      image: 'gradient-to-br from-emerald-600 to-teal-600',
+      image: ecommerceImg,
     },
     {
       title: 'Professional Services',
@@ -34,9 +37,10 @@ const CaseStudiesSection = () => {
         { metric: 'Pipeline Growth', value: '$5M+', icon: DollarSign },
         { metric: 'Brand Authority', value: '#1 Ranking', icon: TrendingUp },
       ],
-      image: 'gradient-to-br from-orange-600 to-red-600',
+      image: b2bImg,
     },
   ];
+
 
   return (
     <section className="py-24 relative overflow-hidden">
@@ -73,15 +77,18 @@ const CaseStudiesSection = () => {
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Image/Visual Section */}
-              <div className={`h-48 bg-${study.image} relative overflow-hidden`}>
-                <div className="absolute inset-0 gradient-primary opacity-90"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-sm font-medium text-white/80 mb-2">{study.category}</div>
-                    <div className="w-16 h-16 glass rounded-2xl flex items-center justify-center mx-auto glow-secondary">
-                      <TrendingUp className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
+              <div className="h-48 relative overflow-hidden">
+                <img
+                  src={study.image}
+                  alt={`${study.title} case study`}
+                  loading="lazy"
+                  width={1024}
+                  height={768}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 rounded-full text-xs font-medium glass text-accent">{study.category}</span>
                 </div>
               </div>
 
