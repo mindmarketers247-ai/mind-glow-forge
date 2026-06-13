@@ -339,33 +339,17 @@ const AIInfluencer = () => {
               </ul>
             </div>
             <div className="relative h-[520px]">
-              {[0, 1, 2].map((i) => (
-                <div
-                  key={i}
-                  className="absolute w-48 h-[400px] rounded-[2.5rem] border-4 border-white/10 overflow-hidden glow-secondary"
-                  style={{
-                    left: `${i * 28}%`,
-                    top: `${i * 30}px`,
-                    background: `linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%)`,
-                    transform: `rotate(${(i - 1) * 6}deg)`,
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-14 h-14 rounded-full glass flex items-center justify-center">
-                      <Play className="w-6 h-6 text-white ml-1" fill="white" />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-4 left-3 right-3 text-white">
-                    <div className="text-xs font-semibold">@aimodel_{i + 1}</div>
-                    <div className="text-[10px] opacity-80">{['Trying this new product', 'Honest review', 'Day in my life'][i]}</div>
-                    <div className="flex items-center gap-3 mt-2 text-[10px]">
-                      <span className="flex items-center gap-1"><Heart className="w-3 h-3" fill="white" /> 12.4K</span>
-                      <span className="flex items-center gap-1"><MessageCircle className="w-3 h-3" /> 892</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              <div className="relative w-full h-full rounded-3xl overflow-hidden glass card-glow">
+                <img
+                  src={ugcImg}
+                  alt="AI-generated UGC content visualization with floating smartphone screens"
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none" />
+              </div>
             </div>
           </div>
         </div>
