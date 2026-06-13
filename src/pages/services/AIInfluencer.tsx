@@ -363,6 +363,19 @@ const AIInfluencer = () => {
               How We Create Your <span className="text-gradient">AI Influencer</span>
             </h2>
           </div>
+
+          <div className="relative rounded-3xl overflow-hidden glass card-glow mb-12">
+            <img
+              src={processImg}
+              alt="AI influencer creation process visualization"
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="w-full h-64 md:h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/80 pointer-events-none" />
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {steps.map((s) => (
               <div key={s.n} className="p-6 rounded-2xl glass card-glow relative">
