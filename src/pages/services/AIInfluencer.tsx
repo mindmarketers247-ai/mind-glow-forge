@@ -237,25 +237,19 @@ const AIInfluencer = () => {
             </div>
 
             <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                {influencers.slice(0, 4).map((inf, i) => (
-                  <div
-                    key={inf.name}
-                    className={`relative rounded-2xl overflow-hidden aspect-[3/4] bg-gradient-to-br ${inf.gradient} ${
-                      i % 2 === 1 ? 'translate-y-8' : ''
-                    } hover:scale-105 transition-transform duration-500`}
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                    <div className="absolute top-3 left-3 px-2 py-0.5 rounded-full glass text-[10px] text-white">
-                      {inf.industry}
-                    </div>
-                    <div className="absolute bottom-3 left-3 right-3">
-                      <div className="text-sm font-bold text-white">{inf.name}</div>
-                      <div className="text-[10px] text-white/70">{inf.followers} followers</div>
-                    </div>
-                  </div>
-                ))}
+              <div className="relative rounded-3xl overflow-hidden glass card-glow">
+                <img
+                  src={heroImg}
+                  alt="Futuristic AI digital persona visualization"
+                  loading="lazy"
+                  width={1024}
+                  height={1024}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
               </div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 gradient-glow rounded-full animate-float opacity-60" />
+              <div className="absolute -bottom-4 -left-4 w-14 h-14 gradient-glow rounded-full animate-float opacity-60" style={{ animationDelay: '1s' }} />
             </div>
           </div>
         </div>
