@@ -6,42 +6,43 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Chen',
-      role: 'CEO, TechFlow Solutions',
-      company: 'SaaS Startup',
-      content: 'Mind Marketers transformed our marketing approach completely. Their AI-driven strategies helped us scale from 1K to 50K users in just 8 months. The ROI has been incredible.',
+      name: 'Namita Sharma',
+      role: 'Google Cloud Strategic Consultant',
+      company: 'Founder Branding',
+      content: 'They brought a strong sense of clarity, consistency, and creativity to our founder branding and online presence. They understood the founder\u2019s voice and translated it into impactful content while maintaining consistency throughout. Reliable, detail-oriented, and genuinely valuable to our brand.',
       rating: 5,
-      initials: 'SC',
-      color: 'from-purple-500 to-pink-500'
+      initials: 'NS',
+      color: 'from-orange-500 to-amber-500'
     },
     {
-      name: 'Marcus Rodriguez',
-      role: 'Founder, GreenEarth Co',
-      company: 'E-commerce',
-      content: 'The team at Mind Marketers doesn\'t just execute campaigns; they become strategic partners. Our online revenue increased by 400% in the first year working together.',
+      name: 'Nitya Prakhar',
+      role: 'Co-Founder & CEO, wrrk.ai',
+      company: 'AI / SaaS',
+      content: 'Simran played a pivotal role in shaping my founder branding and transforming our brand perception. She understood not just design and messaging, but the psychology behind how a brand should make people feel. She was quick, intuitive, and consistently went beyond the brief.',
       rating: 5,
-      initials: 'MR',
-      color: 'from-green-500 to-emerald-500'
+      initials: 'NP',
+      color: 'from-amber-500 to-orange-600'
     },
     {
-      name: 'Dr. Amanda Foster',
-      role: 'Managing Partner, Foster Consulting',
-      company: 'Professional Services',
-      content: 'Their LinkedIn personal branding strategy positioned me as a thought leader in my industry. We\'ve generated over $2M in new business from the leads they helped create.',
+      name: 'Saurabh Agrawal',
+      role: 'CEO, Cyber Soldiers Lab',
+      company: 'Cybersecurity',
+      content: 'The team is efficient and reliable, with a strong understanding of social media content. Clear direction is all they need to consistently deliver high-quality work. A dependable team to work with for building a stronger online presence.',
       rating: 5,
-      initials: 'AF',
-      color: 'from-blue-500 to-cyan-500'
+      initials: 'SA',
+      color: 'from-orange-600 to-yellow-500'
     },
     {
-      name: 'Jake Thompson',
-      role: 'CMO, FitLife Nutrition',
-      company: 'Health & Wellness',
-      content: 'Mind Marketers understands the pulse of digital marketing like no other agency. Their data-driven approach and creative execution have exceeded all our expectations.',
+      name: 'Col. Subhajeet Naha, Retd.',
+      role: 'AI Governance & Cybersecurity Leader',
+      company: 'Brand Enhancement',
+      content: 'They are highly recommended for brand enhancement. We worked closely together to strengthen our online brand presence, bringing greater clarity and consistency to how we presented ourselves digitally.',
       rating: 5,
-      initials: 'JT',
+      initials: 'SN',
       color: 'from-orange-500 to-red-500'
     }
   ];
+
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -164,25 +165,31 @@ const TestimonialsSection = () => {
           </button>
         </div>
 
-        {/* Bottom Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 text-center">
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">98%</div>
-            <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-          </div>
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">4.9/5</div>
-            <div className="text-sm text-muted-foreground">Average Rating</div>
-          </div>
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">150+</div>
-            <div className="text-sm text-muted-foreground">Happy Clients</div>
-          </div>
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">95%</div>
-            <div className="text-sm text-muted-foreground">Retention Rate</div>
+        {/* What We've Built */}
+        <div className="mt-20">
+          <h3 className="text-3xl md:text-4xl font-bold text-center mb-10">
+            <span className="text-gradient">What We've Built</span>
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">50+</div>
+              <div className="text-sm text-muted-foreground">Projects &amp; Campaigns</div>
+            </div>
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">4.9/5</div>
+              <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+            </div>
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">Multiple</div>
+              <div className="text-sm text-muted-foreground">Industries Served</div>
+            </div>
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">Growing</div>
+              <div className="text-sm text-muted-foreground">Long-Term Partnerships</div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );

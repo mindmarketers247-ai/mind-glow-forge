@@ -44,18 +44,22 @@ const CTASection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass mb-8 glow-secondary">
             <Sparkles className="w-4 h-4 text-accent animate-pulse" />
-            <span className="text-sm font-medium text-accent">Ready to Scale?</span>
+            <span className="text-sm font-medium text-accent">Let's Talk</span>
           </div>
 
           {/* Main Headline */}
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            <span className="block text-gradient mb-2">Ready to grow your brand</span>
-            <span className="block text-foreground">with AI-driven marketing?</span>
+            <span className="block text-gradient mb-2">Ready to Build a</span>
+            <span className="block text-foreground">Stronger Brand?</span>
           </h2>
 
+          <p className="text-2xl font-semibold mb-6">
+            Let's figure out what your marketing actually needs.
+          </p>
+
           {/* Subtext */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Join 150+ successful brands that have transformed their growth trajectory with our proven AI-driven marketing strategies.
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+            Whether you need stronger founder branding, better search visibility, more qualified leads, or a digital presence that finally reflects the quality of your business, we'll help you identify the right next move.
           </p>
 
           {/* Main CTA Button */}
@@ -71,49 +75,56 @@ const CTASection = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex items-center justify-center gap-3 glass p-4 rounded-2xl glow-secondary">
               <Zap className="w-5 h-5 text-accent" />
-              <span className="text-sm">No Long-term Contracts</span>
+              <span className="text-sm">No generic packages</span>
             </div>
             <div className="flex items-center justify-center gap-3 glass p-4 rounded-2xl glow-secondary">
               <Sparkles className="w-5 h-5 text-accent" />
-              <span className="text-sm">30-Day Money Back Guarantee</span>
+              <span className="text-sm">No unnecessary services</span>
             </div>
             <div className="flex items-center justify-center gap-3 glass p-4 rounded-2xl glow-secondary">
               <Calendar className="w-5 h-5 text-accent" />
-              <span className="text-sm">Results in 30 Days or Less</span>
+              <span className="text-sm">Just a clear conversation about your goals</span>
             </div>
           </div>
 
-          {/* Secondary Actions */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="btn-outline text-lg px-8 py-3 flex items-center gap-3">
-              View Case Studies
-              <ArrowRight className="w-5 h-5" />
-            </button>
-            <div className="text-muted-foreground">
-              or call us at{' '}
-              <a href="tel:+1234567890" className="text-accent hover:underline font-semibold">
-                (123) 456-7890
-              </a>
-            </div>
-          </div>
+          {/* Let's Talk */}
+          <div className="pt-12 border-t border-border">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-gradient">Let's Talk</span>
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Have a project in mind or simply want to know what's possible?
+            </p>
 
-          {/* Final Stats */}
-          <div className="mt-16 pt-12 border-t border-border">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+              <button className="btn-outline text-lg px-8 py-3 flex items-center gap-3">
+                Get In Touch
+                <ArrowRight className="w-5 h-5" />
+              </button>
+              <div className="text-muted-foreground">
+                or call us at{' '}
+                <a href="tel:+918360221177" className="text-accent hover:underline font-semibold">
+                  +91 83602 21177
+                </a>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-gradient mb-2">24 Hours</div>
-                <div className="text-muted-foreground text-sm">Average Response Time</div>
+                <div className="text-muted-foreground text-sm">Typical Response Time</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-gradient mb-2">300%</div>
-                <div className="text-muted-foreground text-sm">Average Growth Rate</div>
+                <div className="text-3xl font-bold text-gradient mb-2">Strategy First</div>
+                <div className="text-muted-foreground text-sm">Every engagement starts with understanding your goals</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-gradient mb-2">$50M+</div>
-                <div className="text-muted-foreground text-sm">Client Revenue Generated</div>
+                <div className="text-3xl font-bold text-gradient mb-2">Built for Growth</div>
+                <div className="text-muted-foreground text-sm">Marketing aligned with your business objectives</div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
