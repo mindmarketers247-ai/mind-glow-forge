@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
-import CaseStudiesSection from '@/components/CaseStudiesSection';
+import WhyUsSection from '@/components/WhyUsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
@@ -15,12 +15,13 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <CaseStudiesSection />
+      <WhyUsSection />
       <TestimonialsSection />
       <CTASection />
       <Footer />
     </div>
   );
 };
+
 
 export default Index;
