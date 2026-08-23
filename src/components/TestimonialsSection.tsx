@@ -165,25 +165,31 @@ const TestimonialsSection = () => {
           </button>
         </div>
 
-        {/* Bottom Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 text-center">
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">98%</div>
-            <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-          </div>
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">4.9/5</div>
-            <div className="text-sm text-muted-foreground">Average Rating</div>
-          </div>
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">150+</div>
-            <div className="text-sm text-muted-foreground">Happy Clients</div>
-          </div>
-          <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">95%</div>
-            <div className="text-sm text-muted-foreground">Retention Rate</div>
+        {/* What We've Built */}
+        <div className="mt-20">
+          <h3 className="text-3xl md:text-4xl font-bold text-center mb-10">
+            <span className="text-gradient">What We've Built</span>
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">50+</div>
+              <div className="text-sm text-muted-foreground">Projects &amp; Campaigns</div>
+            </div>
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">4.9/5</div>
+              <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+            </div>
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">Multiple</div>
+              <div className="text-sm text-muted-foreground">Industries Served</div>
+            </div>
+            <div className="glass p-6 rounded-2xl">
+              <div className="text-3xl font-bold text-gradient mb-2">Growing</div>
+              <div className="text-sm text-muted-foreground">Long-Term Partnerships</div>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
   );
