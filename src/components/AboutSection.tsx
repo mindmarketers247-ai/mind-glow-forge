@@ -107,21 +107,22 @@ const AboutSection = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">The Tesla of Marketing</h3>
+                    <h3 className="text-2xl font-bold mb-2">Marketing With Purpose</h3>
                     <p className="text-muted-foreground mb-6">
-                      Innovative, bold, and always ahead of the curve
+                      Strategy, creativity, and data working together
                     </p>
 
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-2xl font-bold text-gradient">5+</div>
-                        <div className="text-sm text-muted-foreground">Years Experience</div>
+                        <div className="text-2xl font-bold text-gradient">50+</div>
+                        <div className="text-sm text-muted-foreground">Projects &amp; Campaigns</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-gradient">24/7</div>
-                        <div className="text-sm text-muted-foreground">AI Monitoring</div>
+                        <div className="text-2xl font-bold text-gradient">4.9/5</div>
+                        <div className="text-sm text-muted-foreground">Client Satisfaction</div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
