@@ -77,15 +77,10 @@ const ServicesSection = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">Amplify Your Growth</span>
           </h2>
-
-          <p className="text-2xl font-semibold mb-4">
-            Marketing Built Around Your Growth Goals
-          </p>
-
+          
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            You don't need every marketing service. You need the right combination of them.
+            From AI-powered strategies to conversion optimization, we provide comprehensive marketing solutions that scale your business.
           </p>
-
         </div>
 
         {/* Services Grid */}

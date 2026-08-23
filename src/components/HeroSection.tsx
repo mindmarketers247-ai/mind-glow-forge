@@ -46,18 +46,18 @@ const HeroSection = () => {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass mb-8 glow-secondary">
           <Sparkles className="w-4 h-4 text-accent" />
-          <span className="text-sm font-medium text-accent">Smart Marketing, Real Results</span>
+          <span className="text-sm font-medium text-accent">AI-Driven Marketing Solutions</span>
         </div>
 
         {/* Main Headline */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="block text-gradient">Marketing That Builds</span>
-          <span className="block text-foreground">Visibility, Trust &amp; Growth</span>
+          <span className="block text-gradient">Smart Marketing,</span>
+          <span className="block text-foreground">Real Results</span>
         </h1>
 
         {/* Subtext */}
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          We help founders and ambitious businesses build a stronger brand, reach the right audience, and turn their digital presence into a growth engine.
+          We help startups, founders, and brands scale with AI-driven digital marketing strategies that deliver measurable growth.
         </p>
 
         {/* CTA Buttons */}
@@ -76,19 +76,18 @@ const HeroSection = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient mb-2">50+</div>
-            <div className="text-muted-foreground">Projects &amp; Campaigns</div>
+            <div className="text-4xl font-bold text-gradient mb-2">150+</div>
+            <div className="text-muted-foreground">Brands Scaled</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient mb-2">Multiple Industries</div>
-            <div className="text-muted-foreground">B2B, Healthcare, Professional Services &amp; More</div>
+            <div className="text-4xl font-bold text-gradient mb-2">$50M+</div>
+            <div className="text-muted-foreground">Revenue Generated</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient mb-2">4.9/5</div>
-            <div className="text-muted-foreground">Client Satisfaction</div>
+            <div className="text-4xl font-bold text-gradient mb-2">300%</div>
+            <div className="text-muted-foreground">Avg. Growth Rate</div>
           </div>
         </div>
-
       </div>
 
       {/* Scroll Indicator */}

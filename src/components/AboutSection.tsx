@@ -21,23 +21,9 @@ const AboutSection = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 <span className="text-gradient">Who We Are</span>
               </h2>
-              <p className="text-2xl font-semibold mb-6">
-                We make businesses easier to find, trust, and choose.
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Mind Marketers is a forward-thinking digital marketing agency that combines cutting-edge AI technology with proven marketing strategies to deliver unprecedented results for ambitious brands.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Mind Marketers is a growth-focused marketing agency helping businesses build a stronger presence across search, social media, paid advertising, content, and founder branding.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                We combine strategic thinking, creative execution, data, and AI-powered tools to create marketing that has a clear purpose.
-              </p>
-              <ul className="space-y-2 mb-2">
-                {['Build visibility.', 'Strengthen credibility.', 'Generate opportunities.'].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-lg">
-                    <span className="w-2 h-2 rounded-full gradient-glow"></span>
-                    <span className="text-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
 
             <div className="space-y-6">
@@ -46,9 +32,9 @@ const AboutSection = () => {
                   <Brain className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Strategy First</h3>
+                  <h3 className="text-xl font-semibold mb-2">AI-Powered Intelligence</h3>
                   <p className="text-muted-foreground">
-                    We start by understanding your business, audience, positioning, and goals before deciding what marketing you actually need.
+                    We leverage advanced AI algorithms to analyze market trends, consumer behavior, and optimize campaigns in real-time.
                   </p>
                 </div>
               </div>
@@ -58,9 +44,9 @@ const AboutSection = () => {
                   <Target className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Built Around Your Brand</h3>
+                  <h3 className="text-xl font-semibold mb-2">Precision Targeting</h3>
                   <p className="text-muted-foreground">
-                    Your marketing shouldn't look or sound like everyone else's. We create a clear, consistent presence that reflects what makes your business different.
+                    Our data-driven approach ensures your message reaches the right audience at the perfect moment for maximum impact.
                   </p>
                 </div>
               </div>
@@ -70,9 +56,9 @@ const AboutSection = () => {
                   <Zap className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Focused on Growth</h3>
+                  <h3 className="text-xl font-semibold mb-2">Rapid Execution</h3>
                   <p className="text-muted-foreground">
-                    Every campaign, piece of content, and channel should contribute to a business goal, whether that's visibility, authority, enquiries, or conversions.
+                    Fast implementation and continuous optimization mean you see results quickly and consistently.
                   </p>
                 </div>
               </div>
@@ -84,7 +70,6 @@ const AboutSection = () => {
               </button>
             </div>
           </div>
-
 
           {/* Visual Side */}
           <div className="relative">
@@ -107,22 +92,21 @@ const AboutSection = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">Marketing With Purpose</h3>
+                    <h3 className="text-2xl font-bold mb-2">The Tesla of Marketing</h3>
                     <p className="text-muted-foreground mb-6">
-                      Strategy, creativity, and data working together
+                      Innovative, bold, and always ahead of the curve
                     </p>
 
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-2xl font-bold text-gradient">50+</div>
-                        <div className="text-sm text-muted-foreground">Projects &amp; Campaigns</div>
+                        <div className="text-2xl font-bold text-gradient">5+</div>
+                        <div className="text-sm text-muted-foreground">Years Experience</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-gradient">4.9/5</div>
-                        <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+                        <div className="text-2xl font-bold text-gradient">24/7</div>
+                        <div className="text-sm text-muted-foreground">AI Monitoring</div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
