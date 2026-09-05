@@ -57,7 +57,7 @@ const HeroSection = () => {
 
         {/* Subtext */}
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-          We help startups, founders, and brands scale with AI-driven digital marketing strategies that deliver measurable growth.
+          We help businesses market smarter, reach more customers, and build brands that grow.
         </p>
 
         {/* CTA Buttons */}
@@ -74,18 +74,22 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient mb-2">150+</div>
-            <div className="text-muted-foreground">Brands Scaled</div>
+            <div className="text-4xl font-bold text-gradient mb-2">30+</div>
+            <div className="text-muted-foreground">Businesses Served</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient mb-2">$50M+</div>
-            <div className="text-muted-foreground">Revenue Generated</div>
+            <div className="text-4xl font-bold text-gradient mb-2">75+</div>
+            <div className="text-muted-foreground">Projects Delivered</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-gradient mb-2">300%</div>
-            <div className="text-muted-foreground">Avg. Growth Rate</div>
+            <div className="text-4xl font-bold text-gradient mb-2">4.8/5</div>
+            <div className="text-muted-foreground">Client Rating</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-gradient mb-2">90%+</div>
+            <div className="text-muted-foreground">Repeat Clients</div>
           </div>
         </div>
       </div>
