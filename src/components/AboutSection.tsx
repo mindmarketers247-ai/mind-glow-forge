@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import { Brain, Target, Zap, TrendingUp, Palette, BarChart3, Send, CheckCircle } from 'lucide-react';
 
 const AboutSection = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    business: '',
+  });
+  const [submitted, setSubmitted] = useState(false);
+
   const pillars = [
     {
       icon: Target,
@@ -23,11 +31,19 @@ const AboutSection = () => {
     },
   ];
 
-  const growth = [
-    { icon: Target, label: 'Strategy' },
-    { icon: Palette, label: 'Creative' },
-    { icon: TrendingUp, label: 'Performance' },
-  ];
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setFormData({ name: '', email: '', phone: '', business: '' });
+    setTimeout(() => setSubmitted(false), 4000);
+  };
 
   return (
     <section className="py-24 relative overflow-hidden">
