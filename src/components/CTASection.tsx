@@ -97,23 +97,8 @@ const CTASection = () => {
             </div>
           </div>
 
-          {/* Final Stats */}
-          <div className="mt-16 pt-12 border-t border-border">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-gradient mb-2">24 Hours</div>
-                <div className="text-muted-foreground text-sm">Average Response Time</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-gradient mb-2">300%</div>
-                <div className="text-muted-foreground text-sm">Average Growth Rate</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-gradient mb-2">$50M+</div>
-                <div className="text-muted-foreground text-sm">Client Revenue Generated</div>
-              </div>
-            </div>
-          </div>
+
+
         </div>
       </div>
     </section>
