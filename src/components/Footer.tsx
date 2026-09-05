@@ -3,13 +3,10 @@ import {
   Mail, 
   Phone, 
   MapPin, 
-  Linkedin, 
-  Twitter, 
-  Instagram, 
-  Facebook,
   ArrowRight
 } from 'lucide-react';
-import logo from '@/assets/mind-marketers-logo.png';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
+import logo from '@/assets/mind-marketers-logo-dark.png.asset.json';
 
 const Footer = () => {
   const quickLinks = [
@@ -29,10 +26,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: Linkedin, href: '#', color: 'hover:text-blue-400' },
-    { name: 'Twitter', icon: Twitter, href: '#', color: 'hover:text-sky-400' },
-    { name: 'Instagram', icon: Instagram, href: '#', color: 'hover:text-pink-400' },
-    { name: 'Facebook', icon: Facebook, href: '#', color: 'hover:text-blue-500' },
+    { name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/mind-marketers/' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/mindmarketersagency/' },
+    { name: 'Pinterest', icon: FaPinterestP, href: 'https://in.pinterest.com/mindmarketers/' },
+    { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/mindmarketer' },
   ];
 
   return (
@@ -51,34 +48,36 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src={logo} alt="Mind Marketers" className="h-10 w-auto" />
-              <span className="text-xl font-bold text-gradient">Mind Marketers</span>
+              <img src={logo.url} alt="Mind Marketers" className="h-16 w-auto" />
             </div>
             
+            <p className="font-semibold text-foreground mb-3">
+              We build brands impossible to ignore.
+            </p>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              The Tesla of digital marketing agencies. We combine AI-driven strategies with creative excellence to deliver unprecedented growth for ambitious brands.
+              We help founders and businesses build a distinctive brand, strengthen their digital presence, and create marketing that gets noticed, remembered, and chosen.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="w-4 h-4 text-accent" />
-                <a href="mailto:hello@mindmarketers.com" className="text-muted-foreground hover:text-accent transition-colors">
-                  hello@mindmarketers.com
+                <a href="mailto:mindmarketerssupport@gmail.com" className="text-muted-foreground hover:text-accent transition-colors break-all">
+                  mindmarketerssupport@gmail.com
                 </a>
               </div>
               
               <div className="flex items-center gap-3 text-sm">
                 <Phone className="w-4 h-4 text-accent" />
-                <a href="tel:+1234567890" className="text-muted-foreground hover:text-accent transition-colors">
-                  (123) 456-7890
+                <a href="tel:+918882911596" className="text-muted-foreground hover:text-accent transition-colors">
+                  +91 88829 11596
                 </a>
               </div>
               
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-muted-foreground">
-                  San Francisco, CA
+                <span className="text-muted-foreground leading-relaxed">
+                  Ground floor Plot no. 57, Industrial Area Phase I, Chandigarh, 160002
                 </span>
               </div>
             </div>
@@ -152,7 +151,9 @@ const Footer = () => {
                     <a
                       key={index}
                       href={social.href}
-                      className={`w-10 h-10 rounded-full glass flex items-center justify-center text-muted-foreground ${social.color} transition-all duration-300 hover:glow-secondary`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 rounded-full glass flex items-center justify-center text-muted-foreground transition-all duration-300 hover:text-accent hover:glow-secondary"
                       aria-label={social.name}
                     >
                       <Icon className="w-4 h-4" />
@@ -170,20 +171,7 @@ const Footer = () => {
             
             {/* Copyright */}
             <div className="text-sm text-muted-foreground">
-              © 2024 Mind Marketers. All rights reserved.
-            </div>
-
-            {/* Legal Links */}
-            <div className="flex gap-6 text-sm">
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-accent transition-colors">
-                Cookie Policy
-              </a>
+              © 2026 Mind Marketers. All rights reserved.
             </div>
           </div>
         </div>

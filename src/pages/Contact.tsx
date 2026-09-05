@@ -151,8 +151,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email Us</h3>
                       <p className="text-muted-foreground text-sm mb-2">Get a response within 24 hours</p>
-                      <a href="mailto:hello@mindmarketers.com" className="text-accent hover:text-accent/80 transition-colors">
-                        hello@mindmarketers.com
+                      <a href="mailto:mindmarketerssupport@gmail.com" className="text-accent hover:text-accent/80 transition-colors break-all">
+                        mindmarketerssupport@gmail.com
                       </a>
                     </div>
                   </div>
@@ -163,9 +163,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Call Us</h3>
-                      <p className="text-muted-foreground text-sm mb-2">Mon-Fri 9AM-6PM PST</p>
-                      <a href="tel:+1-555-MIND-MKT" className="text-accent hover:text-accent/80 transition-colors">
-                        +1 (555) MIND-MKT
+                      <p className="text-muted-foreground text-sm mb-2">Speak with our team</p>
+                      <a href="tel:+918882911596" className="text-accent hover:text-accent/80 transition-colors">
+                        +91 88829 11596
                       </a>
                     </div>
                   </div>
@@ -177,8 +177,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">LinkedIn</h3>
                       <p className="text-muted-foreground text-sm mb-2">Connect with our team</p>
-                      <a href="#" className="text-accent hover:text-accent/80 transition-colors">
-                        @mindmarketers
+                      <a href="https://www.linkedin.com/company/mind-marketers/" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 transition-colors">
+                        Mind Marketers
                       </a>
                     </div>
                   </div>
@@ -191,8 +191,9 @@ const Contact = () => {
                       <h3 className="font-semibold mb-1">Office</h3>
                       <p className="text-muted-foreground text-sm mb-2">Visit us (by appointment)</p>
                       <address className="text-accent not-italic">
-                        123 Innovation Drive<br />
-                        San Francisco, CA 94105
+                        Ground floor Plot no. 57<br />
+                        Industrial Area Phase I<br />
+                        Chandigarh, 160002
                       </address>
                     </div>
                   </div>

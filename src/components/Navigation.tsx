@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import mindMarketersLogo from '@/assets/mind-marketers-logo.png';
+import mindMarketersLogo from '@/assets/mind-marketers-logo-dark.png.asset.json';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +30,10 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img 
-              src={mindMarketersLogo} 
+              src={mindMarketersLogo.url} 
               alt="Mind Marketers" 
               className="h-10 w-auto group-hover:animate-pulse-glow transition-all duration-300"
             />
-            <span className="text-xl font-bold text-gradient hidden md:block">
-              Mind Marketers
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
