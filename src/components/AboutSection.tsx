@@ -1,5 +1,5 @@
-import React from 'react';
-import { Brain, Target, Zap, TrendingUp, Palette, BarChart3 } from 'lucide-react';
+import React, { useState } from 'react';
+import { Brain, Target, Zap, TrendingUp, Palette, BarChart3, Send, CheckCircle } from 'lucide-react';
 
 const AboutSection = () => {
   const pillars = [
