@@ -48,9 +48,6 @@ const AboutSection = () => {
               <p className="text-2xl font-semibold text-foreground mb-6">
                 Marketing That Starts With Your Business
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Mind Marketers is a marketing agency that helps businesses build stronger brands, reach the right audience, and create marketing that drives meaningful growth.
-              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 We bring strategy, creativity, technology, and performance together to help businesses market themselves with more clarity and purpose.
               </p>
