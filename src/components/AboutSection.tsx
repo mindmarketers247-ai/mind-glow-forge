@@ -1,7 +1,15 @@
-import React from 'react';
-import { Brain, Target, Zap, TrendingUp, Palette, BarChart3 } from 'lucide-react';
+import React, { useState } from 'react';
+import { Brain, Target, Palette, BarChart3, Send, CheckCircle } from 'lucide-react';
 
 const AboutSection = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    business: '',
+  });
+  const [submitted, setSubmitted] = useState(false);
+
   const pillars = [
     {
       icon: Target,
@@ -23,11 +31,19 @@ const AboutSection = () => {
     },
   ];
 
-  const growth = [
-    { icon: Target, label: 'Strategy' },
-    { icon: Palette, label: 'Creative' },
-    { icon: TrendingUp, label: 'Performance' },
-  ];
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setFormData({ name: '', email: '', phone: '', business: '' });
+    setTimeout(() => setSubmitted(false), 4000);
+  };
 
   return (
     <section className="py-24 relative overflow-hidden">
@@ -79,42 +95,96 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Visual Side */}
+          {/* Lead Capture Form */}
           <div className="relative">
-            <div className="relative p-8">
+            <div className="relative p-4 md:p-6">
               <div className="glass card-glow rounded-3xl relative overflow-hidden">
                 <div className="absolute inset-0 gradient-primary opacity-10"></div>
 
-                <div className="relative z-10 p-10 text-center space-y-10">
-                  <div className="w-20 h-20 gradient-glow rounded-2xl flex items-center justify-center mx-auto">
-                    <Brain className="w-10 h-10 text-white" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-3xl font-bold mb-4">
-                      <span className="text-gradient">Built Around Your Growth</span>
-                    </h3>
-                    <p className="text-muted-foreground mb-8">
-                      Three pillars that power everything we do for your brand.
-                    </p>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                      {growth.map((item, index) => {
-                        const Icon = item.icon;
-                        return (
-                          <div
-                            key={index}
-                            className="glass rounded-2xl p-6 flex flex-col items-center gap-4 group hover:card-glow transition-all duration-300"
-                          >
-                            <div className="w-14 h-14 gradient-glow rounded-xl flex items-center justify-center group-hover:animate-pulse-glow">
-                              <Icon className="w-7 h-7 text-white" />
-                            </div>
-                            <span className="text-lg font-semibold">{item.label}</span>
-                          </div>
-                        );
-                      })}
+                <div className="relative z-10 p-8 md:p-10">
+                  <div className="text-center mb-8 space-y-3">
+                    <div className="w-16 h-16 gradient-glow rounded-2xl flex items-center justify-center mx-auto">
+                      <Brain className="w-8 h-8 text-white" />
                     </div>
+                    <h3 className="text-2xl md:text-3xl font-bold">
+                      <span className="text-gradient">Let's Grow Your Brand</span>
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Tell us about your business and we'll get back to you with a tailored growth plan.
+                    </p>
                   </div>
+
+                  {submitted ? (
+                    <div className="flex flex-col items-center justify-center gap-4 py-10 text-center">
+                      <CheckCircle className="w-14 h-14 text-accent animate-pulse-glow" />
+                      <p className="text-xl font-semibold text-foreground">Thank you!</p>
+                      <p className="text-muted-foreground">
+                        We've received your details and will be in touch within 24 hours.
+                      </p>
+                    </div>
+                  ) : (
+                    <form onSubmit={handleSubmit} className="space-y-5">
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-foreground">Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                          placeholder="Your full name"
+                          required
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <label className="text-sm font-medium text-foreground">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                          placeholder="you@company.com"
+                          required
+                        />
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium text-foreground">Phone</label>
+                          <input
+                            type="tel"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleInputChange}
+                            className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                            placeholder="+91 88829 11596"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium text-foreground">Business</label>
+                          <input
+                            type="text"
+                            name="business"
+                            value={formData.business}
+                            onChange={handleInputChange}
+                            className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                            placeholder="Company name"
+                          />
+                        </div>
+                      </div>
+
+                      <button type="submit" className="btn-hero w-full flex items-center justify-center gap-3">
+                        <Send className="w-5 h-5" />
+                        Get My Growth Plan
+                      </button>
+
+                      <p className="text-xs text-center text-muted-foreground">
+                        We respect your privacy. No spam, ever.
+                      </p>
+                    </form>
+                  )}
                 </div>
               </div>
 
