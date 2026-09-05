@@ -191,7 +191,7 @@ const Contact = () => {
                       <h3 className="font-semibold mb-1">Office</h3>
                       <p className="text-muted-foreground text-sm mb-2">Visit us (by appointment)</p>
                       <address className="text-accent not-italic">
-                        Ground floor Plot no. 57<br />
+                        Ground floor Plot no. 25<br />
                         Industrial Area Phase I<br />
                         Chandigarh, 160002
                       </address>
