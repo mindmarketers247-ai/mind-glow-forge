@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Brain, Target, Zap, TrendingUp, Palette, BarChart3, Send, CheckCircle } from 'lucide-react';
+import { Brain, Target, Palette, BarChart3, Send, CheckCircle } from 'lucide-react';
 
 const AboutSection = () => {
   const [formData, setFormData] = useState({
