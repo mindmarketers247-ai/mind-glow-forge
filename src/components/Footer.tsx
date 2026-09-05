@@ -54,9 +54,8 @@ const Footer = () => {
             <p className="font-semibold text-foreground mb-3">
               We build brands impossible to ignore.
             </p>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              We combine AI-driven strategies with creative excellence to deliver unprecedented growth for ambitious brands.
-            </p>
+            <div className="mb-6" />
+
 
 
             {/* Contact Info */}
