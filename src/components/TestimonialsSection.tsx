@@ -6,40 +6,40 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Chen',
-      role: 'CEO, TechFlow Solutions',
-      company: 'SaaS Startup',
-      content: 'Mind Marketers transformed our marketing approach completely. Their AI-driven strategies helped us scale from 1K to 50K users in just 8 months. The ROI has been incredible.',
+      name: 'Namita Sharma',
+      role: 'Google Cloud Strategic Consultant',
+      company: 'Founder Branding',
+      content: 'They brought a strong sense of clarity, consistency, and creativity to our founder branding and online presence. They understood the founder\u2019s voice and translated it into impactful content while maintaining consistency throughout. Reliable, detail-oriented, and genuinely valuable to our brand.',
       rating: 5,
-      initials: 'SC',
+      initials: 'NS',
+      color: 'from-orange-500 to-red-500'
+    },
+    {
+      name: 'Nitya Prakhar',
+      role: 'Co-Founder & CEO, wrrk.ai',
+      company: 'Brand Transformation',
+      content: 'Simran played a pivotal role in shaping my founder branding and transforming our brand perception. She understood not just design and messaging, but the psychology behind how a brand should make people feel. She was quick, intuitive, and consistently went beyond the brief.',
+      rating: 5,
+      initials: 'NP',
       color: 'from-purple-500 to-pink-500'
     },
     {
-      name: 'Marcus Rodriguez',
-      role: 'Founder, GreenEarth Co',
-      company: 'E-commerce',
-      content: 'The team at Mind Marketers doesn\'t just execute campaigns; they become strategic partners. Our online revenue increased by 400% in the first year working together.',
+      name: 'Saurabh Agrawal',
+      role: 'CEO, Cyber Soldiers Lab',
+      company: 'Social Media',
+      content: 'The team is efficient and reliable, with a strong understanding of social media content. Clear direction is all they need to consistently deliver high-quality work. A dependable team to work with for building a stronger online presence.',
       rating: 5,
-      initials: 'MR',
+      initials: 'SA',
       color: 'from-green-500 to-emerald-500'
     },
     {
-      name: 'Dr. Amanda Foster',
-      role: 'Managing Partner, Foster Consulting',
-      company: 'Professional Services',
-      content: 'Their LinkedIn personal branding strategy positioned me as a thought leader in my industry. We\'ve generated over $2M in new business from the leads they helped create.',
+      name: 'Col. Subhajeet Naha, Retd.',
+      role: 'AI Governance & Cybersecurity Leader',
+      company: 'Brand Enhancement',
+      content: 'They are highly recommended for brand enhancement. We worked closely together to strengthen our online brand presence, bringing greater clarity and consistency to how we presented ourselves digitally.',
       rating: 5,
-      initials: 'AF',
+      initials: 'SN',
       color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      name: 'Jake Thompson',
-      role: 'CMO, FitLife Nutrition',
-      company: 'Health & Wellness',
-      content: 'Mind Marketers understands the pulse of digital marketing like no other agency. Their data-driven approach and creative execution have exceeded all our expectations.',
-      rating: 5,
-      initials: 'JT',
-      color: 'from-orange-500 to-red-500'
     }
   ];
 
