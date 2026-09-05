@@ -167,10 +167,9 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            
+          <div className="flex justify-center items-center gap-4">
             {/* Copyright */}
-            <div className="text-sm text-muted-foreground">
+            <div className="text-sm text-muted-foreground text-center">
               © 2026 Mind Marketers. All rights reserved.
             </div>
           </div>
