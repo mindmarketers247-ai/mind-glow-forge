@@ -91,8 +91,8 @@ const CTASection = () => {
             </button>
             <div className="text-muted-foreground">
               or call us at{' '}
-              <a href="tel:+1234567890" className="text-accent hover:underline font-semibold">
-                (123) 456-7890
+              <a href="tel:+918882911596" className="text-accent hover:underline font-semibold">
+                +91 88829 11596
               </a>
             </div>
           </div>

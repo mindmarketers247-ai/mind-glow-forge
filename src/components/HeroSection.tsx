@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import logo from '@/assets/mind-marketers-logo.png';
+import logo from '@/assets/mind-marketers-logo-dark.png.asset.json';
 import heroVisual from '@/assets/hero-visual.jpg';
 
 const HeroSection = () => {
@@ -37,7 +37,7 @@ const HeroSection = () => {
         {/* Logo */}
         <div className="mb-8 flex justify-center">
           <img 
-            src={logo} 
+            src={logo.url} 
             alt="Mind Marketers" 
             className="h-20 w-auto animate-float"
           />
