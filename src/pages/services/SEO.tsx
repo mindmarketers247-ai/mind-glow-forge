@@ -37,9 +37,6 @@ const SEO = () => {
                 Start Your SEO Journey
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link to="/case-studies" className="btn-outline">
-                View SEO Results
-              </Link>
             </div>
           </div>
         </div>
@@ -168,10 +165,6 @@ const SEO = () => {
                       <span>Lead quality: 300% improvement</span>
                     </li>
                   </ul>
-                  <Link to="/case-studies" className="btn-outline">
-                    View Full Case Study
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Link>
                 </div>
                 <div className="bg-card/30 rounded-2xl p-6 backdrop-blur-sm border border-white/10">
                   <div className="text-center">
