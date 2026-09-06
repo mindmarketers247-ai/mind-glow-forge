@@ -26,6 +26,7 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
+    <WhatsAppFloat />
     <TooltipProvider>
       <Toaster />
       <Sonner />
