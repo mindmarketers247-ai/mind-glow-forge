@@ -12,7 +12,7 @@ const Footer = () => {
   const quickLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
-    { name: 'Case Studies', href: '#case-studies' },
+    
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center gap-3 text-sm">
-                <MapPin className="w-4 h-4 text-accent" />
+                <MapPin className="w-4 h-4 text-accent shrink-0" />
                 <span className="text-muted-foreground leading-relaxed">
                   1st floor Plot no. 25, Industrial Area Phase I, Chandigarh, 160002
                 </span>

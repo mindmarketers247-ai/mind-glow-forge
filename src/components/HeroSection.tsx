@@ -66,11 +66,6 @@ const HeroSection = () => {
             Work With Us
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          
-          <button className="btn-outline group flex items-center gap-3">
-            See Our Work
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
         </div>
 
         {/* Stats */}

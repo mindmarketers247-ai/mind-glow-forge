@@ -87,15 +87,6 @@ const Navigation = () => {
             </div>
 
             <Link
-              to="/case-studies"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                isActiveRoute('/case-studies') ? 'text-accent' : 'text-foreground'
-              }`}
-            >
-              Case Studies
-            </Link>
-
-            <Link
               to="/blog"
               className={`text-sm font-medium transition-colors hover:text-accent ${
                 isActiveRoute('/blog') ? 'text-accent' : 'text-foreground'
@@ -166,16 +157,6 @@ const Navigation = () => {
                 </Link>
               ))}
             </div>
-
-            <Link
-              to="/case-studies"
-              className={`block text-sm font-medium transition-colors hover:text-accent ${
-                isActiveRoute('/case-studies') ? 'text-accent' : 'text-foreground'
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              Case Studies
-            </Link>
 
             <Link
               to="/blog"
