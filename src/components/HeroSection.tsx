@@ -34,14 +34,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 animate-fade-in-up">
-        {/* Logo */}
-        <div className="mb-8 flex justify-center">
-          <img 
-            src={logo.url} 
-            alt="Mind Marketers" 
-            className="h-20 w-auto animate-float"
-          />
-        </div>
+
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass mb-8 glow-secondary">
