@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="flex items-center gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-accent" />
                 <span className="text-muted-foreground leading-relaxed">
-                  Ground floor Plot no. 25, Industrial Area Phase I, Chandigarh, 160002
+                  1st floor Plot no. 25, Industrial Area Phase I, Chandigarh, 160002
                 </span>
               </div>
             </div>
