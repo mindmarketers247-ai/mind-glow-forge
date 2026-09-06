@@ -85,10 +85,6 @@ const CTASection = () => {
 
           {/* Secondary Actions */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="btn-outline text-lg px-8 py-3 flex items-center gap-3">
-              View Case Studies
-              <ArrowRight className="w-5 h-5" />
-            </button>
             <div className="text-muted-foreground">
               or call us at{' '}
               <a href="tel:+918882911596" className="text-accent hover:underline font-semibold">
