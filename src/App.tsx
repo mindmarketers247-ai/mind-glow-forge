@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-import CaseStudies from "./pages/CaseStudies";
 import AIMarketing from "./pages/services/AIMarketing";
 import AIInfluencer from "./pages/services/AIInfluencer";
 import SEOContentMarketing from "./pages/services/SEOContentMarketing";
@@ -36,7 +35,6 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/services/ai-marketing" element={<AIMarketing />} />
           <Route path="/services/ai-influencer" element={<AIInfluencer />} />
           <Route path="/services/seo-content-marketing" element={<SEOContentMarketing />} />
