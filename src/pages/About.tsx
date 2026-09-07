@@ -44,14 +44,8 @@ const About = () => {
             <Users className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-accent">About Mind Marketers</span>
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-gradient">Who We Are</span>
-          </h1>
-          
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            We're the rebels who refuse to accept mediocre marketing. A team of AI pioneers, 
-            growth hackers, and creative visionaries building the future of digital marketing.
+            We help businesses build stronger brands, reach the right audience, and turn their marketing efforts into meaningful growth.
           </p>
         </div>
       </section>
