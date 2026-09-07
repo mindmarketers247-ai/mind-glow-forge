@@ -19,7 +19,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import heroImg from '@/assets/ai-influencer-hero.jpg';
 import ugcImg from '@/assets/ai-influencer-ugc.jpg';
-import processGraphic from '@/assets/ai-influencer-process-graphic.png.asset.json';
+import processImg from '@/assets/ai-influencer-process.jpg';
 import infFitness from '@/assets/inf-fitness.png.asset.json';
 import infBeauty from '@/assets/inf-beauty.webp.asset.json';
 import infTech from '@/assets/inf-tech.png.asset.json';
@@ -380,14 +380,14 @@ const AIInfluencer = () => {
 
           <div className="relative rounded-3xl overflow-hidden glass card-glow mb-12">
             <img
-              src={processGraphic.url}
-              alt="Wireframe visualization of how Mind Marketers builds a custom AI influencer"
+              src={processImg}
+              alt="AI influencer creation process visualization"
               loading="lazy"
-              width={1028}
-              height={497}
+              width={1024}
+              height={1024}
               className="w-full h-64 md:h-80 object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-background/40 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-background/80 pointer-events-none" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
