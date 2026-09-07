@@ -92,7 +92,7 @@ const influencers = [
     engagement: '6.8%',
     image: infFinance.url,
     objectPosition: '50% 18%',
-    scale: 1.25,
+    scale: 1.4,
     creates: ['Financial education', 'Investment content', 'Business insights', 'Startup storytelling'],
     tagline: 'Money, markets, and startup playbooks made simple.',
   },
