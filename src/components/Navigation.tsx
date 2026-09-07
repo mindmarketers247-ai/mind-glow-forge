@@ -29,10 +29,10 @@ const Navigation = () => {
           
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img 
-              src={mindMarketersLogo.url} 
-              alt="Mind Marketers" 
-              className="h-10 w-auto group-hover:animate-pulse-glow transition-all duration-300"
+            <img
+              src={mindMarketersLogo.url}
+              alt="Mind Marketers"
+              className="h-16 w-auto group-hover:animate-pulse-glow transition-all duration-300"
             />
           </Link>
 
