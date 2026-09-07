@@ -169,7 +169,8 @@ const InfluencerCard = ({ inf, index }: { inf: typeof influencers[number]; index
         loading="lazy"
         width={1080}
         height={1920}
-        className="absolute inset-0 w-full h-full object-cover object-top opacity-85 group-hover:scale-105 transition-transform duration-700"
+        className="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700"
+        style={{ objectPosition: inf.objectPosition ?? 'center top' }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
       <div className="absolute top-4 left-4 px-3 py-1 rounded-full glass text-xs font-medium text-white">
