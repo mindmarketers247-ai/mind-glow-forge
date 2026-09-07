@@ -255,11 +255,11 @@ const AIInfluencer = () => {
               <div className="relative rounded-3xl overflow-hidden glass card-glow">
                 <img
                   src={heroImg}
-                  alt="Futuristic AI digital persona visualization"
+                  alt="AI influencer creator surrounded by floating social media content panels"
                   loading="lazy"
                   width={1024}
                   height={1024}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover opacity-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
               </div>
