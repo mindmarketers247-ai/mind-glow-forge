@@ -91,7 +91,8 @@ const influencers = [
     followers: '1.5M',
     engagement: '6.8%',
     image: infFinance.url,
-    objectPosition: '50% 80%',
+    objectPosition: '50% 90%',
+    scale: 1.15,
     creates: ['Financial education', 'Investment content', 'Business insights', 'Startup storytelling'],
     tagline: 'Money, markets, and startup playbooks made simple.',
   },
@@ -170,7 +171,7 @@ const InfluencerCard = ({ inf, index }: { inf: typeof influencers[number]; index
         width={1080}
         height={1920}
         className="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700"
-        style={{ objectPosition: inf.objectPosition ?? 'center top' }}
+        style={{ objectPosition: inf.objectPosition ?? 'center top', scale: inf.scale ?? 1 } as React.CSSProperties}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
       <div className="absolute top-4 left-4 px-3 py-1 rounded-full glass text-xs font-medium text-white">
