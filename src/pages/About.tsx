@@ -64,36 +64,25 @@ const About = () => {
             {/* Content */}
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl font-bold">
-                <span className="text-gradient">Our Story</span>
+                <span className="text-gradient">Who We Are</span>
               </h2>
+              
+              <p className="text-2xl font-semibold text-foreground">
+                Marketing Should Make Business Growth Easier.
+              </p>
               
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  In 2019, we saw a problem. Traditional marketing agencies were stuck in the past, 
-                  using outdated strategies while AI was revolutionizing every other industry.
+                  Mind Marketers was built with a simple belief: good marketing isn't about being everywhere. It's about being visible in the right places, communicating clearly, and giving people a reason to choose your brand.
                 </p>
                 
                 <p>
-                  So we built Mind Marketers—the world's first truly AI-native marketing agency. 
-                  We combine human creativity with machine intelligence to deliver results that 
-                  were impossible just five years ago.
+                  We work with businesses to build stronger digital presence through strategy, content, SEO, paid marketing, social media, and creative execution.
                 </p>
                 
                 <p>
-                  Today, we're proud to be innovative, bold, 
-                  and always pushing the boundaries of what's possible in digital marketing.
+                  Our approach combines clear thinking, creative ideas, data, and technology to create marketing that works for the business, not just the feed.
                 </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 pt-8">
-                <div className="text-center p-6 rounded-2xl glass">
-                  <div className="text-3xl font-bold text-gradient mb-2">150+</div>
-                  <div className="text-sm text-muted-foreground">Brands Transformed</div>
-                </div>
-                <div className="text-center p-6 rounded-2xl glass">
-                  <div className="text-3xl font-bold text-gradient mb-2">$50M+</div>
-                  <div className="text-sm text-muted-foreground">Revenue Generated</div>
-                </div>
               </div>
             </div>
 
