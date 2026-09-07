@@ -20,77 +20,85 @@ import Footer from '@/components/Footer';
 import heroImg from '@/assets/ai-influencer-hero.jpg';
 import ugcImg from '@/assets/ai-influencer-ugc.jpg';
 import processImg from '@/assets/ai-influencer-process.jpg';
+import infFitness from '@/assets/inf-fitness.png.asset.json';
+import infBeauty from '@/assets/inf-beauty.webp.asset.json';
+import infTech from '@/assets/inf-tech.png.asset.json';
+import infFashion from '@/assets/inf-fashion.webp.asset.json';
+import infLifestyle from '@/assets/inf-lifestyle.webp.asset.json';
+import infRealEstate from '@/assets/inf-realestate.webp.asset.json';
+import infFinance from '@/assets/inf-finance.webp.asset.json';
+import infHealthcare from '@/assets/inf-healthcare.webp.asset.json';
 
 const influencers = [
   {
-    name: 'Aria Vale',
+    name: 'Aarohi Sharma',
     industry: 'Fitness Creator',
     followers: '842K',
     engagement: '7.2%',
-    gradient: 'from-orange-500 to-red-500',
+    image: infFitness.url,
     creates: ['Workout videos', 'Supplement promotions', 'Fitness challenges', 'Gym UGC'],
     tagline: 'Daily routines, transformations, and high-energy reels.',
   },
   {
-    name: 'Luna Reyes',
+    name: 'Ananya Kapoor',
     industry: 'Beauty Creator',
     followers: '1.2M',
     engagement: '8.1%',
-    gradient: 'from-pink-500 to-rose-400',
+    image: infBeauty.url,
     creates: ['Product reviews', 'Makeup tutorials', 'Skincare content', 'Brand collaborations'],
     tagline: 'Skincare science meets editorial beauty content.',
   },
   {
-    name: 'Kai Mercer',
+    name: 'Arjun Mehta',
     industry: 'Tech Reviewer',
     followers: '654K',
     engagement: '6.4%',
-    gradient: 'from-blue-500 to-cyan-400',
+    image: infTech.url,
     creates: ['App reviews', 'Software demos', 'Product comparisons', 'AI tool content'],
     tagline: 'Honest reviews of the tools shaping tomorrow.',
   },
   {
-    name: 'Sienna Park',
+    name: 'Myra Sethi',
     industry: 'Fashion Influencer',
     followers: '978K',
     engagement: '7.8%',
-    gradient: 'from-fuchsia-500 to-purple-500',
+    image: infFashion.url,
     creates: ['Outfit showcases', 'Product placements', 'Styling videos', 'Trend content'],
     tagline: 'Editorial styling for streetwear and luxury alike.',
   },
   {
-    name: 'Noa Lin',
+    name: 'Riya Nair',
     industry: 'Lifestyle Creator',
     followers: '512K',
     engagement: '9.0%',
-    gradient: 'from-amber-400 to-orange-500',
+    image: infLifestyle.url,
     creates: ['Daily vlogs', 'Brand integrations', 'Product recommendations', 'Story content'],
     tagline: 'Slow living, soft mornings, sponsored seamlessly.',
   },
   {
-    name: 'Marcus Hale',
+    name: 'Vikram Malhotra',
     industry: 'Real Estate Consultant',
     followers: '388K',
     engagement: '5.9%',
-    gradient: 'from-emerald-500 to-teal-500',
+    image: infRealEstate.url,
     creates: ['Property walkthroughs', 'Market updates', 'Investment education', 'Local guides'],
     tagline: 'Walkthroughs and market breakdowns that convert.',
   },
   {
-    name: 'Eli Chen',
+    name: 'Ishita Verma',
     industry: 'Finance Educator',
     followers: '1.5M',
     engagement: '6.8%',
-    gradient: 'from-yellow-500 to-amber-500',
+    image: infFinance.url,
     creates: ['Financial education', 'Investment content', 'Business insights', 'Startup storytelling'],
     tagline: 'Money, markets, and startup playbooks made simple.',
   },
   {
-    name: 'Dr. Maya Okafor',
+    name: 'Dr. Priya Reddy',
     industry: 'Healthcare Expert',
     followers: '720K',
     engagement: '7.5%',
-    gradient: 'from-sky-500 to-indigo-500',
+    image: infHealthcare.url,
     creates: ['Educational content', 'Wellness awareness', 'Informational videos', 'Professional branding'],
     tagline: 'Trusted, evidence-led wellness education at scale.',
   },
@@ -152,14 +160,16 @@ const InfluencerCard = ({ inf, index }: { inf: typeof influencers[number]; index
     className="group relative rounded-3xl overflow-hidden glass card-glow cursor-pointer"
     style={{ animationDelay: `${index * 80}ms` }}
   >
-    <div className={`relative aspect-[4/5] bg-gradient-to-br ${inf.gradient} overflow-hidden`}>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-      <div className="absolute inset-0 opacity-30 mix-blend-overlay"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at 30% 20%, rgba(255,255,255,0.6), transparent 40%), radial-gradient(circle at 70% 80%, rgba(0,0,0,0.5), transparent 50%)',
-        }}
+    <div className="relative aspect-[4/5] overflow-hidden bg-deep-gray">
+      <img
+        src={inf.image}
+        alt={`${inf.name} — AI ${inf.industry.toLowerCase()} persona`}
+        loading="lazy"
+        width={1080}
+        height={1920}
+        className="absolute inset-0 w-full h-full object-cover object-top opacity-85 group-hover:scale-105 transition-transform duration-700"
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
       <div className="absolute top-4 left-4 px-3 py-1 rounded-full glass text-xs font-medium text-white">
         {inf.industry}
       </div>
