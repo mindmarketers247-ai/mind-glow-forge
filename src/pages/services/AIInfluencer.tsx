@@ -72,7 +72,7 @@ const influencers = [
     followers: '512K',
     engagement: '9.0%',
     image: infLifestyle.url,
-    objectPosition: '50% 20%',
+    objectPosition: '50% 80%',
     creates: ['Daily vlogs', 'Brand integrations', 'Product recommendations', 'Story content'],
     tagline: 'Slow living, soft mornings, sponsored seamlessly.',
   },
