@@ -62,10 +62,6 @@ const About = () => {
             
             {/* Content */}
             <div className="space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold">
-                <span className="text-gradient">Who We Are</span>
-              </h2>
-              
               <p className="text-2xl font-semibold text-foreground">
                 Marketing Should Make Business Growth Easier.
               </p>
