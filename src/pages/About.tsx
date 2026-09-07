@@ -50,8 +50,7 @@ const About = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            We're the rebels who refuse to accept mediocre marketing. A team of AI pioneers, 
-            growth hackers, and creative visionaries building the future of digital marketing.
+            We help businesses build stronger brands, reach the right audience, and turn their marketing efforts into meaningful growth.
           </p>
         </div>
       </section>
