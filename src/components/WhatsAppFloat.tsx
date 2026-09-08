@@ -2,7 +2,7 @@ import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFloat = () => {
-  const phone = '918882911596';
+  const phone = '919877581739';
   const message = encodeURIComponent("Hi Mind Marketers, I'd like to know more about your services.");
   const href = `https://wa.me/${phone}?text=${message}`;
 
