@@ -182,7 +182,7 @@ const AboutSection = () => {
                             value={formData.phone}
                             onChange={handleInputChange}
                             className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
-                            placeholder="+91 88829 11596"
+                            placeholder="+91 98775 81739"
                           />
                         </div>
                         <div className="space-y-2">
