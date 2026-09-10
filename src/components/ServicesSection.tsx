@@ -9,12 +9,19 @@ import {
   BarChart,
   Zap
 } from 'lucide-react';
-import aiImg from '@/assets/service-ai.jpg';
-import seoImg from '@/assets/service-seo.jpg';
-import adsImg from '@/assets/service-ads.jpg';
-import linkedinImg from '@/assets/service-linkedin.jpg';
-import socialImg from '@/assets/service-social.jpg';
-import webImg from '@/assets/service-web.jpg';
+import aiAsset from '@/assets/service-ai.webp.asset.json';
+import seoAsset from '@/assets/service-seo.webp.asset.json';
+import adsAsset from '@/assets/service-ads.webp.asset.json';
+import linkedinAsset from '@/assets/service-linkedin.webp.asset.json';
+import socialAsset from '@/assets/service-social.jpg.asset.json';
+import webAsset from '@/assets/service-web.jpg.asset.json';
+
+const aiImg = aiAsset.url;
+const seoImg = seoAsset.url;
+const adsImg = adsAsset.url;
+const linkedinImg = linkedinAsset.url;
+const socialImg = socialAsset.url;
+const webImg = webAsset.url;
 
 const ServicesSection = () => {
   const services = [
