@@ -9,6 +9,7 @@ const HeroSection = () => {
       {/* Animated Background */}
       <div className="absolute inset-0">
         <img src={heroVisual} alt="" aria-hidden="true" className="theme-bg-art hero-brain absolute inset-0 w-full h-full object-cover opacity-48" width={1920} height={1080} />
+        <img src={heroDay} alt="" aria-hidden="true" className="hero-day-img absolute inset-0 w-full h-full object-cover" width={1600} height={1000} />
         <div className="hero-overlay absolute inset-0 bg-gradient-to-br from-background/65 via-background/50 to-deep-gray/65"></div>
         
         {/* Floating Particles */}
