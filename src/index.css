@@ -154,6 +154,7 @@
   .btn-hero {
     @apply px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300;
     background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+    color: hsl(var(--primary-foreground));
     box-shadow: 0 0 20px hsl(var(--glow-primary));
   }
   
@@ -254,4 +255,9 @@
 
 .light .glass {
   box-shadow: 0 4px 24px hsl(0 0% 0% / 0.06);
+}
+
+/* Dark background artwork stays subtle on the day theme */
+.light .theme-bg-art {
+  opacity: 0.1;
 }

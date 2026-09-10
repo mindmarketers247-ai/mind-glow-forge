@@ -7,7 +7,7 @@ const CTASection = () => {
     <section className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-deep-gray">
-        <img src={ctaBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-25" width={1536} height={768} loading="lazy" />
+        <img src={ctaBg} alt="" aria-hidden="true" className="theme-bg-art absolute inset-0 w-full h-full object-cover opacity-25" width={1536} height={768} loading="lazy" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-deep-gray/70 to-background/80"></div>
         {/* Animated Gradient Streaks */}
         <div className="absolute inset-0">
