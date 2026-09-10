@@ -36,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-background border-t border-border relative overflow-hidden">
+    <footer className="footer-black bg-background border-t border-border relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/3 w-64 h-64 gradient-primary rounded-full blur-3xl opacity-5"></div>
