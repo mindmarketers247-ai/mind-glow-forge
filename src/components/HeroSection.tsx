@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import heroVisual from '@/assets/hero-visual.jpg';
+import heroDay from '@/assets/hero-day.jpg';
 
 const HeroSection = () => {
   return (
