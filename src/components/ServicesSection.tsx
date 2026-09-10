@@ -15,15 +15,13 @@ import adsAsset from '@/assets/service-ads.webp.asset.json';
 import linkedinAsset from '@/assets/service-linkedin.webp.asset.json';
 import socialAsset from '@/assets/service-social.jpg.asset.json';
 import webAsset from '@/assets/service-web.jpg.asset.json';
-import socialImgUrl from '@/assets/service-social.jpg';
-import webImgUrl from '@/assets/service-web.jpg';
 
 const aiImg = aiAsset.url;
 const seoImg = seoAsset.url;
 const adsImg = adsAsset.url;
 const linkedinImg = linkedinAsset.url;
-const socialImg = socialImgUrl;
-const webImg = webImgUrl;
+const socialImg = socialAsset.url;
+const webImg = webAsset.url;
 
 const ServicesSection = () => {
   const services = [
