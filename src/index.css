@@ -69,7 +69,44 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Dark theme already applied as default */
+  /* Dark (night) theme is the default. Day theme below. */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 22 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 32 100% 55%;
+
+    --secondary: 24 30% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 20 15% 95%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 22 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 20 12% 88%;
+    --input: 20 12% 92%;
+    --ring: 22 100% 50%;
+
+    --gradient-start: 22 100% 50%;
+    --gradient-end: 32 100% 55%;
+    --deep-gray: 24 30% 97%;
+
+    --glass-bg: 0 0% 100% / 0.7;
+    --glass-border: 0 0% 0% / 0.08;
+
+    --glow-primary: 22 100% 50% / 0.18;
+    --glow-secondary: 32 100% 55% / 0.12;
+  }
 }
 
 @layer base {
