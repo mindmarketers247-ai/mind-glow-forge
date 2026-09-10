@@ -7,8 +7,11 @@ import {
 } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
 import logo from '@/assets/mind-marketers-logo-dark.png.asset.json';
+import logoLight from '@/assets/mind-marketers-logo.png';
+import { useTheme } from '@/hooks/use-theme';
 
 const Footer = () => {
+  const { isLight } = useTheme();
   const quickLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
