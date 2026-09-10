@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import mindMarketersLogo from '@/assets/mind-marketers-logo-dark.png.asset.json';
+import mindMarketersLogoLight from '@/assets/mind-marketers-logo.png';
+import ThemeToggle from '@/components/ThemeToggle';
+import { useTheme } from '@/hooks/use-theme';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
+  const { isLight } = useTheme();
 
   const services = [
     { name: 'AI-Driven Marketing', path: '/services/ai-marketing' },
