@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import mindMarketersLogo from '@/assets/mind-marketers-logo-dark.png.asset.json';
+import mindMarketersLogoLight from '@/assets/mind-marketers-logo.png';
+import ThemeToggle from '@/components/ThemeToggle';
+import { useTheme } from '@/hooks/use-theme';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const location = useLocation();
+  const { isLight } = useTheme();
 
   const services = [
     { name: 'AI-Driven Marketing', path: '/services/ai-marketing' },
@@ -30,7 +34,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src={mindMarketersLogo.url}
+              src={isLight ? mindMarketersLogoLight : mindMarketersLogo.url}
               alt="Mind Marketers"
               className="h-16 w-auto group-hover:animate-pulse-glow transition-all duration-300"
             />
@@ -104,21 +108,26 @@ const Navigation = () => {
               Contact
             </Link>
 
+            <ThemeToggle />
+
             <Link
               to="/contact"
-              className="btn-hero ml-4"
+              className="btn-hero ml-2"
             >
               Get Started
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-foreground hover:text-accent transition-colors"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Actions */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-foreground hover:text-accent transition-colors"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

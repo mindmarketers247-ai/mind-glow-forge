@@ -7,8 +7,11 @@ import {
 } from 'lucide-react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
 import logo from '@/assets/mind-marketers-logo-dark.png.asset.json';
+import logoLight from '@/assets/mind-marketers-logo.png';
+import { useTheme } from '@/hooks/use-theme';
 
 const Footer = () => {
+  const { isLight } = useTheme();
   const quickLinks = [
     { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
@@ -48,7 +51,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src={logo.url} alt="Mind Marketers" className="h-16 w-auto" />
+              <img src={isLight ? logoLight : logo.url} alt="Mind Marketers" className="h-16 w-auto" />
             </div>
             
             <p className="font-semibold text-foreground mb-3">

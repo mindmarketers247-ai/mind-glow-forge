@@ -69,7 +69,44 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Dark theme already applied as default */
+  /* Dark (night) theme is the default. Day theme below. */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 22 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 32 100% 55%;
+
+    --secondary: 24 30% 96%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 20 15% 95%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 22 100% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 20 12% 88%;
+    --input: 20 12% 92%;
+    --ring: 22 100% 50%;
+
+    --gradient-start: 22 100% 50%;
+    --gradient-end: 32 100% 55%;
+    --deep-gray: 24 30% 97%;
+
+    --glass-bg: 0 0% 100% / 0.7;
+    --glass-border: 0 0% 0% / 0.08;
+
+    --glow-primary: 22 100% 50% / 0.18;
+    --glow-secondary: 32 100% 55% / 0.12;
+  }
 }
 
 @layer base {
@@ -117,6 +154,7 @@
   .btn-hero {
     @apply px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300;
     background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
+    color: hsl(var(--primary-foreground));
     box-shadow: 0 0 20px hsl(var(--glow-primary));
   }
   
@@ -200,4 +238,26 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Day theme fixes for hard-coded white overlays used across sections */
+.light [class*="border-white/"] {
+  border-color: hsl(0 0% 0% / 0.08);
+}
+
+.light [class*="bg-white/"] {
+  background-color: hsl(0 0% 0% / 0.03);
+}
+
+.light [class*="hover\:bg-white/"]:hover {
+  background-color: hsl(var(--accent) / 0.08);
+}
+
+.light .glass {
+  box-shadow: 0 4px 24px hsl(0 0% 0% / 0.06);
+}
+
+/* Dark background artwork stays subtle on the day theme */
+.light .theme-bg-art {
+  opacity: 0.1;
 }

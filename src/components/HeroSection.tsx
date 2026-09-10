@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        <img src={heroVisual} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-48" width={1920} height={1080} />
+        <img src={heroVisual} alt="" aria-hidden="true" className="theme-bg-art absolute inset-0 w-full h-full object-cover opacity-48" width={1920} height={1080} />
         <div className="absolute inset-0 bg-gradient-to-br from-background/65 via-background/50 to-deep-gray/65"></div>
         
         {/* Floating Particles */}
