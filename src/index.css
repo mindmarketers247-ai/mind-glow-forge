@@ -261,3 +261,26 @@
 .light .theme-bg-art {
   opacity: 0.1;
 }
+
+/* Footer stays black with white text in the day theme */
+.light .footer-black {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+.light .footer-black .text-foreground {
+  color: #ffffff;
+}
+.light .footer-black .text-muted-foreground {
+  color: hsl(0 0% 100% / 0.7);
+}
+.light .footer-black .border-border,
+.light .footer-black [class*="border-white/"] {
+  border-color: hsl(0 0% 100% / 0.15);
+}
+.light .footer-black .bg-card,
+.light .footer-black .glass {
+  background-color: hsl(0 0% 100% / 0.08);
+}
+.light .footer-black .glass {
+  box-shadow: none;
+}
