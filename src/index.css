@@ -262,18 +262,18 @@
   opacity: 0.1;
 }
 
-/* Day-theme hero background: warm premium gradient mesh + visible brain ink */
+/* Day-theme hero: light premium image with warm gradient wash for text legibility */
+.light .hero-day-img {
+  display: block;
+  opacity: 0.9;
+}
 .light .hero-brain {
-  opacity: 0.22 !important;
-  mix-blend-mode: multiply;
-  filter: contrast(1.1) saturate(0.6);
+  display: none;
 }
 .light .hero-overlay {
   background:
-    radial-gradient(60% 50% at 20% 20%, rgba(255, 149, 0, 0.18), transparent 70%),
-    radial-gradient(55% 45% at 85% 30%, rgba(255, 106, 0, 0.14), transparent 70%),
-    radial-gradient(50% 50% at 50% 100%, rgba(255, 106, 0, 0.10), transparent 70%),
-    linear-gradient(135deg, #ffffff 0%, #fff6ee 35%, #ffe9d6 60%, #ffffff 100%) !important;
+    radial-gradient(60% 50% at 20% 20%, rgba(255, 149, 0, 0.10), transparent 70%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 246, 238, 0.4) 50%, rgba(255, 255, 255, 0.6) 100%) !important;
 }
 
 /* Footer stays black with white text in the day theme */
