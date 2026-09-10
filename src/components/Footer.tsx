@@ -51,7 +51,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src={logo.url} alt="Mind Marketers" className="h-16 w-auto" />
+              <img src={isLight ? logoLight : logo.url} alt="Mind Marketers" className="h-16 w-auto" />
             </div>
             
             <p className="font-semibold text-foreground mb-3">
