@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, MessageCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, MessageCircle, Brain, CheckCircle } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -7,9 +7,11 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     business: '',
     message: ''
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -18,10 +20,35 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    setSending(true);
+    try {
+      await fetch('https://formsubmit.co/ajax/mindmarketerssupport@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `New Enquiry from ${formData.name} — Mind Marketers Website`,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          business: formData.business,
+          message: formData.message,
+        }),
+      });
+      setSubmitted(true);
+      setFormData({ name: '', email: '', phone: '', business: '', message: '' });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch {
+      alert('Something went wrong. Please email us directly at mindmarketerssupport@gmail.com');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
