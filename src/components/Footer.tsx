@@ -20,12 +20,15 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'AI-Driven Marketing', href: '#' },
-    { name: 'SEO & Content', href: '#' },
-    { name: 'Paid Advertising', href: '#' },
-    { name: 'LinkedIn Branding', href: '#' },
-    { name: 'Social Media', href: '#' },
-    { name: 'Web Development', href: '#' },
+    { name: 'AI-Driven Marketing', href: '/services/ai-marketing' },
+    { name: 'AI Influencer Marketing', href: '/services/ai-influencer' },
+    { name: 'SEO', href: '/services/seo' },
+    { name: 'Content Marketing', href: '/services/content-marketing' },
+    { name: 'Paid Advertising', href: '/services/paid-ads' },
+    { name: 'LinkedIn Branding', href: '/services/linkedin-branding' },
+    { name: 'Social Media', href: '/services/social-media' },
+    { name: 'Website Development', href: '/services/website-development' },
+    { name: 'Funnel Development', href: '/services/funnel-development' },
   ];
 
   const socialLinks = [
