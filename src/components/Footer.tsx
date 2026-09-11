@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Mail, 
   Phone, 
@@ -20,12 +21,15 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'AI-Driven Marketing', href: '#' },
-    { name: 'SEO & Content', href: '#' },
-    { name: 'Paid Advertising', href: '#' },
-    { name: 'LinkedIn Branding', href: '#' },
-    { name: 'Social Media', href: '#' },
-    { name: 'Web Development', href: '#' },
+    { name: 'AI-Driven Marketing', href: '/services/ai-marketing' },
+    { name: 'AI Influencer Marketing', href: '/services/ai-influencer' },
+    { name: 'SEO', href: '/services/seo' },
+    { name: 'Content Marketing', href: '/services/content-marketing' },
+    { name: 'Paid Advertising', href: '/services/paid-ads' },
+    { name: 'LinkedIn Branding', href: '/services/linkedin-branding' },
+    { name: 'Social Media', href: '/services/social-media' },
+    { name: 'Website Development', href: '/services/website-development' },
+    { name: 'Funnel Development', href: '/services/funnel-development' },
   ];
 
   const socialLinks = [
@@ -110,13 +114,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a 
-                    href={service.href} 
+                  <Link
+                    to={service.href}
                     className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
