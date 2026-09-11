@@ -85,79 +85,115 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-16">
             
             {/* Contact Form */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">
-                  <span className="text-gradient">Send Us a Message</span>
-                </h2>
-                <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you within 24 hours with a custom growth strategy.
-                </p>
+            <div className="relative">
+              <div className="relative p-4 md:p-6">
+                <div className="glass card-glow rounded-3xl relative overflow-hidden">
+                  <div className="absolute inset-0 gradient-primary opacity-10"></div>
+
+                  <div className="relative z-10 p-8 md:p-10">
+                    <div className="text-center mb-8 space-y-3">
+                      <div className="w-16 h-16 gradient-glow rounded-2xl flex items-center justify-center mx-auto">
+                        <Brain className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-2xl md:text-3xl font-bold">
+                        <span className="text-gradient">Let's Grow Your Brand</span>
+                      </h3>
+                      <p className="text-muted-foreground">
+                        Tell us about your business and we'll get back to you with a tailored growth plan.
+                      </p>
+                    </div>
+
+                    {submitted ? (
+                      <div className="flex flex-col items-center justify-center gap-4 py-10 text-center">
+                        <CheckCircle className="w-14 h-14 text-accent animate-pulse-glow" />
+                        <p className="text-xl font-semibold text-foreground">Thank you!</p>
+                        <p className="text-muted-foreground">
+                          We've received your details and will be in touch within 24 hours.
+                        </p>
+                      </div>
+                    ) : (
+                      <form onSubmit={handleSubmit} className="space-y-5">
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium text-foreground">Name</label>
+                          <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleInputChange}
+                            className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                            placeholder="Your full name"
+                            required
+                          />
+                        </div>
+
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium text-foreground">Email</label>
+                          <input
+                            type="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
+                            className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                            placeholder="you@company.com"
+                            required
+                          />
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <label className="text-sm font-medium text-foreground">Phone</label>
+                            <input
+                              type="tel"
+                              name="phone"
+                              value={formData.phone}
+                              onChange={handleInputChange}
+                              className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                              placeholder="+91 98775 81739"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <label className="text-sm font-medium text-foreground">Business</label>
+                            <input
+                              type="text"
+                              name="business"
+                              value={formData.business}
+                              onChange={handleInputChange}
+                              className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
+                              placeholder="Company name"
+                            />
+                          </div>
+                        </div>
+
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium text-foreground">Message</label>
+                          <textarea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleInputChange}
+                            rows={5}
+                            className="w-full p-3 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300 resize-none"
+                            placeholder="Tell us about your business goals and how we can help you grow..."
+                            required
+                          />
+                        </div>
+
+                        <button type="submit" disabled={sending} className="btn-hero w-full flex items-center justify-center gap-3 disabled:opacity-60">
+                          <Send className="w-5 h-5" />
+                          {sending ? 'Sending…' : 'Get My Growth Plan'}
+                        </button>
+
+                        <p className="text-xs text-center text-muted-foreground">
+                          We respect your privacy. No spam, ever.
+                        </p>
+                      </form>
+                    )}
+                  </div>
+                </div>
+
+                {/* Floating Elements */}
+                <div className="absolute -top-4 -left-4 w-16 h-16 gradient-glow rounded-full animate-float opacity-60"></div>
+                <div className="absolute -bottom-4 -right-4 w-12 h-12 gradient-glow rounded-full animate-float opacity-60" style={{ animationDelay: '1s' }}></div>
               </div>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Name</label>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      className="w-full p-4 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
-                      placeholder="Your full name"
-                      required
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Email</label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full p-4 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
-                      placeholder="your.email@company.com"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Business</label>
-                  <input
-                    type="text"
-                    name="business"
-                    value={formData.business}
-                    onChange={handleInputChange}
-                    className="w-full p-4 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300"
-                    placeholder="Your company or business"
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Message</label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    rows={6}
-                    className="w-full p-4 rounded-xl glass border border-white/10 bg-white/5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent focus:glow-secondary transition-all duration-300 resize-none"
-                    placeholder="Tell us about your business goals and how we can help you grow..."
-                    required
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full btn-hero flex items-center justify-center gap-3"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-              </form>
             </div>
 
             {/* Contact Info & Map */}
