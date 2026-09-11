@@ -114,13 +114,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a 
-                    href={service.href} 
+                  <Link
+                    to={service.href}
                     className="text-muted-foreground hover:text-accent transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
                     {service.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
