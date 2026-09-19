@@ -33,10 +33,14 @@ const ContentMarketing = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-hero">
-                Launch Your Content Strategy
+              <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20launch%20my%20content%20strategy."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero">
+              Launch Your Content Strategy
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+            </a>
             </div>
           </div>
         </div>
@@ -209,10 +213,14 @@ const ContentMarketing = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Join 300+ brands that trust us to create content that converts and builds lasting relationships.
             </p>
-            <Link to="/contact" className="btn-hero text-lg px-8 py-4">
+            <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20launch%20my%20content%20strategy."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
               Start Your Content Journey
               <ArrowRight className="w-6 h-6 ml-2" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

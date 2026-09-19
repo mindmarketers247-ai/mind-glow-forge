@@ -33,10 +33,14 @@ const WebsiteDevelopment = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-hero">
-                Start Your Website Project
+              <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20start%20my%20website%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero">
+              Start Your Website Project
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+            </a>
             </div>
           </div>
         </div>
@@ -209,10 +213,14 @@ const WebsiteDevelopment = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Join 200+ businesses that trust us to build websites that convert visitors into customers.
             </p>
-            <Link to="/contact" className="btn-hero text-lg px-8 py-4">
+            <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20start%20my%20website%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
               Get Your Website Quote
               <ArrowRight className="w-6 h-6 ml-2" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

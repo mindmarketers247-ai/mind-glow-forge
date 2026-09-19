@@ -227,9 +227,13 @@ const AIInfluencer = () => {
                 can generate content at scale.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contact" className="btn-hero inline-flex items-center justify-center gap-2">
-                  Build My AI Influencer <ArrowRight className="w-5 h-5" />
-                </Link>
+                <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20AI%20influencer."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero inline-flex items-center justify-center gap-2">
+              Build My AI Influencer <ArrowRight className="w-5 h-5" />
+            </a>
                 <a href="#showcase" className="btn-outline inline-flex items-center justify-center gap-2">
                   View AI Influencer Profiles
                 </a>
@@ -475,9 +479,13 @@ const AIInfluencer = () => {
           <p className="text-lg text-muted-foreground mb-10">
             Launch a custom AI influencer built specifically for your brand and start creating content at scale.
           </p>
-          <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
-            Book A Free Strategy Call <ArrowRight className="w-5 h-5" />
-          </Link>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20AI%20influencer."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero inline-flex items-center gap-2">
+              Book A Free Strategy Call <ArrowRight className="w-5 h-5" />
+            </a>
         </div>
       </section>
 
