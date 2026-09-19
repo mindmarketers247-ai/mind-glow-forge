@@ -230,9 +230,14 @@ const SEOContentMarketing = () => {
             Let's create a content strategy that dominates search results and drives consistent organic growth for your business.
           </p>
           
-          <button className="btn-hero text-lg px-8 py-4">
+          <a
+            href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20get%20my%20free%20SEO%20audit."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hero text-lg px-8 py-4"
+          >
             Get Your Free SEO Audit
-          </button>
+          </a>
         </div>
       </section>
 

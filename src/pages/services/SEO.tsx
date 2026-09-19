@@ -209,10 +209,15 @@ const SEO = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Join 500+ businesses that trust us to drive their organic growth and search visibility.
             </p>
-            <Link to="/contact" className="btn-hero text-lg px-8 py-4">
+            <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20get%20my%20free%20SEO%20audit."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4"
+            >
               Get Your Free SEO Audit
               <ArrowRight className="w-6 h-6 ml-2" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
