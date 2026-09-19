@@ -33,10 +33,14 @@ const FunnelDevelopment = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-hero">
-                Build Your Sales Funnel
+              <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20sales%20funnel."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero">
+              Build Your Sales Funnel
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+            </a>
             </div>
           </div>
         </div>
@@ -209,10 +213,14 @@ const FunnelDevelopment = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Join 150+ businesses that trust us to build funnels that convert visitors into loyal customers.
             </p>
-            <Link to="/contact" className="btn-hero text-lg px-8 py-4">
+            <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20sales%20funnel."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
               Design Your Funnel Strategy
               <ArrowRight className="w-6 h-6 ml-2" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -31,9 +31,13 @@ const WebsiteFunnelDevelopment = () => {
             Lightning-fast, mobile-optimized, and designed for maximum conversions.
           </p>
 
-          <button className="btn-hero text-lg px-8 py-4">
-            Build Your Conversion Machine
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20conversion%20machine."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Build Your Conversion Machine
+            </a>
         </div>
       </section>
 
@@ -230,9 +234,13 @@ const WebsiteFunnelDevelopment = () => {
             Stop losing customers to slow, ugly websites. Let's build you a conversion machine that works 24/7.
           </p>
           
-          <button className="btn-hero text-lg px-8 py-4">
-            Start Your Project
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20conversion%20machine."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Start Your Project
+            </a>
         </div>
       </section>
 

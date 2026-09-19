@@ -31,9 +31,13 @@ const SocialMediaManagement = () => {
             into loyal customers across all major social platforms.
           </p>
 
-          <button className="btn-hero text-lg px-8 py-4">
-            Grow Your Social Presence
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20grow%20my%20social%20presence."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Grow Your Social Presence
+            </a>
         </div>
       </section>
 
@@ -230,9 +234,13 @@ const SocialMediaManagement = () => {
             Stop posting into the void. Let's create a social strategy that builds community and drives real business results.
           </p>
           
-          <button className="btn-hero text-lg px-8 py-4">
-            Get Your Social Strategy
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20grow%20my%20social%20presence."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Get Your Social Strategy
+            </a>
         </div>
       </section>
 

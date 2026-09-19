@@ -90,9 +90,13 @@ const AIMarketing = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-hero text-lg px-8 py-4">
-                Start AI Transformation
-              </button>
+              <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20start%20my%20AI%20transformation."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Start AI Transformation
+            </a>
               <button className="px-8 py-4 rounded-xl border border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300 font-medium">
                 See AI in Action
               </button>
@@ -284,9 +288,13 @@ const AIMarketing = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-hero text-lg px-8 py-4">
+            <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20start%20my%20AI%20transformation."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
               Start AI Transformation
-            </button>
+            </a>
             <button className="px-8 py-4 rounded-xl border border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300 font-medium">
               Book Strategy Call
             </button>

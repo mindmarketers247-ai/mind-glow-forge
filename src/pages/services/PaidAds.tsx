@@ -31,9 +31,13 @@ const PaidAds = () => {
             We turn your ad spend into predictable revenue growth.
           </p>
 
-          <button className="btn-hero text-lg px-8 py-4">
-            Launch Your First Campaign
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20launch%20my%20first%20ad%20campaign."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Launch Your First Campaign
+            </a>
         </div>
       </section>
 
@@ -230,9 +234,13 @@ const PaidAds = () => {
             Stop burning money on ineffective ads. Let's create campaigns that consistently deliver profitable results.
           </p>
           
-          <button className="btn-hero text-lg px-8 py-4">
-            Get Your Free Ad Audit
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20launch%20my%20first%20ad%20campaign."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Get Your Free Ad Audit
+            </a>
         </div>
       </section>
 

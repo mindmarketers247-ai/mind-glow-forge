@@ -31,9 +31,13 @@ const LinkedInBranding = () => {
             attract opportunities, and turn connections into customers.
           </p>
 
-          <button className="btn-hero text-lg px-8 py-4">
-            Build Your LinkedIn Authority
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20LinkedIn%20authority."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Build Your LinkedIn Authority
+            </a>
         </div>
       </section>
 
@@ -230,9 +234,13 @@ const LinkedInBranding = () => {
             Transform your LinkedIn into a client acquisition machine. Let's build your authority and attract your ideal customers.
           </p>
           
-          <button className="btn-hero text-lg px-8 py-4">
-            Get Your LinkedIn Strategy
-          </button>
+          <a
+              href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20build%20my%20LinkedIn%20authority."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero text-lg px-8 py-4">
+              Get Your LinkedIn Strategy
+            </a>
         </div>
       </section>
 
