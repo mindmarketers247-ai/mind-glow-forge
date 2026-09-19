@@ -31,9 +31,14 @@ const SEOContentMarketing = () => {
             that drive organic traffic and convert visitors into customers.
           </p>
 
-          <button className="btn-hero text-lg px-8 py-4">
+          <a
+            href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20start%20growing%20my%20organic%20traffic."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hero text-lg px-8 py-4"
+          >
             Start Growing Your Organic Traffic
-          </button>
+          </a>
         </div>
       </section>
 

@@ -33,10 +33,15 @@ const SEO = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-hero">
+              <a
+                href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20start%20my%20SEO%20journey."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-hero"
+              >
                 Start Your SEO Journey
                 <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
