@@ -152,10 +152,15 @@
 
   /* Button Variants */
   .btn-hero {
-    @apply px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300;
+    @apply inline-flex min-h-14 max-w-full items-center justify-center gap-3 rounded-full px-6 py-3 text-center text-base font-semibold leading-tight transition-all duration-300 sm:px-8 sm:py-4 sm:text-lg;
     background: linear-gradient(135deg, hsl(var(--gradient-start)), hsl(var(--gradient-end)));
     color: hsl(var(--primary-foreground));
     box-shadow: 0 0 20px hsl(var(--glow-primary));
+    vertical-align: middle;
+  }
+
+  .btn-hero > svg {
+    flex: 0 0 auto;
   }
   
   .btn-hero:hover {
