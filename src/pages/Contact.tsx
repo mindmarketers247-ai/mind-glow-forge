@@ -311,9 +311,14 @@ const Contact = () => {
             Schedule a 30-minute strategy session where we'll analyze your current marketing and show you exactly how to 10x your results.
           </p>
           
-          <button className="btn-hero text-lg px-8 py-4">
+          <a
+            href="https://wa.me/919877581739?text=Hi%20Mind%20Marketers%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20call."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-hero text-lg px-8 py-4"
+          >
             Book Free Strategy Call
-          </button>
+          </a>
         </div>
       </section>
 
