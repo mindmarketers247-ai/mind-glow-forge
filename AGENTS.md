@@ -1,0 +1,2 @@
+## Analytics
+- Initialize Google Analytics only in the shared HTML head using the public connector environment variable, so all pages share one tag without embedding credentials or duplicating initialization.
