@@ -1,13 +1,13 @@
 import React from 'react';
 import { Calendar, ArrowRight, Sparkles, Zap } from 'lucide-react';
-import ctaBg from '@/assets/cta-bg.jpg';
+import ctaBg from '@/assets/cta-bg.webp';
 
 const CTASection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-deep-gray">
-        <img src={ctaBg} alt="" aria-hidden="true" className="theme-bg-art absolute inset-0 w-full h-full object-cover opacity-25" width={1536} height={768} loading="lazy" />
+        <img src={ctaBg} alt="" aria-hidden="true" className="theme-bg-art absolute inset-0 w-full h-full object-cover opacity-25" width={1376} height={768} loading="lazy" decoding="async" />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-deep-gray/70 to-background/80"></div>
         {/* Animated Gradient Streaks */}
         <div className="absolute inset-0">

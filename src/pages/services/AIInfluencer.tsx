@@ -19,8 +19,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import heroImgAsset from '@/assets/ai-influencer-hero-new.png.asset.json';
 const heroImg = heroImgAsset.url;
-import ugcImg from '@/assets/ai-influencer-ugc.jpg';
-import processImg from '@/assets/ai-influencer-process.jpg';
+import ugcImg from '@/assets/ai-influencer-ugc.webp';
+import processImg from '@/assets/ai-influencer-process.webp';
 import infFitness from '@/assets/inf-fitness.png.asset.json';
 import infBeauty from '@/assets/inf-beauty.webp.asset.json';
 import infTech from '@/assets/inf-tech.png.asset.json';
@@ -260,7 +260,9 @@ const AIInfluencer = () => {
                 <img
                   src={heroImg}
                   alt="AI influencer creator surrounded by floating social media content panels"
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                   width={1024}
                   height={1024}
                   className="w-full h-auto object-cover opacity-90"

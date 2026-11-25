@@ -1,15 +1,21 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import heroVisual from '@/assets/hero-visual.jpg';
-import heroDay from '@/assets/hero-day.jpg';
+import heroVisual from '@/assets/hero-visual.webp';
+import heroDay from '@/assets/hero-day.webp';
+import { useTheme } from '@/hooks/use-theme';
 
 const HeroSection = () => {
+  const { isLight } = useTheme();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        <img src={heroVisual} alt="" aria-hidden="true" className="theme-bg-art hero-brain absolute inset-0 w-full h-full object-cover opacity-48" width={1920} height={1080} />
-        <img src={heroDay} alt="" aria-hidden="true" className="hero-day-img hidden absolute inset-0 w-full h-full object-cover" width={1600} height={1000} />
+        {isLight ? (
+          <img src={heroDay} alt="" aria-hidden="true" className="hero-day-img absolute inset-0 w-full h-full object-cover" width={1600} height={1008} loading="eager" fetchPriority="high" decoding="async" />
+        ) : (
+          <img src={heroVisual} alt="" aria-hidden="true" className="theme-bg-art hero-brain absolute inset-0 w-full h-full object-cover opacity-48" width={1376} height={768} loading="eager" fetchPriority="high" decoding="async" />
+        )}
         <div className="hero-overlay absolute inset-0 bg-gradient-to-br from-background/65 via-background/50 to-deep-gray/65"></div>
         
         {/* Floating Particles */}
